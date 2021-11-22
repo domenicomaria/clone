@@ -1,0 +1,16 @@
+C:\Corso\20211025DevOpsAzure\Reception\bin\Debug\net5.0\Reception.exe
+C:\Corso\20211025DevOpsAzure\Reception\bin\Debug\net5.0\Reception.deps.json
+C:\Corso\20211025DevOpsAzure\Reception\bin\Debug\net5.0\Reception.runtimeconfig.json
+C:\Corso\20211025DevOpsAzure\Reception\bin\Debug\net5.0\Reception.runtimeconfig.dev.json
+C:\Corso\20211025DevOpsAzure\Reception\bin\Debug\net5.0\Reception.dll
+C:\Corso\20211025DevOpsAzure\Reception\bin\Debug\net5.0\ref\Reception.dll
+C:\Corso\20211025DevOpsAzure\Reception\bin\Debug\net5.0\Reception.pdb
+C:\Corso\20211025DevOpsAzure\Reception\obj\Debug\net5.0\Reception.csproj.AssemblyReference.cache
+C:\Corso\20211025DevOpsAzure\Reception\obj\Debug\net5.0\Reception.GeneratedMSBuildEditorConfig.editorconfig
+C:\Corso\20211025DevOpsAzure\Reception\obj\Debug\net5.0\Reception.AssemblyInfoInputs.cache
+C:\Corso\20211025DevOpsAzure\Reception\obj\Debug\net5.0\Reception.AssemblyInfo.cs
+C:\Corso\20211025DevOpsAzure\Reception\obj\Debug\net5.0\Reception.csproj.CoreCompileInputs.cache
+C:\Corso\20211025DevOpsAzure\Reception\obj\Debug\net5.0\Reception.dll
+C:\Corso\20211025DevOpsAzure\Reception\obj\Debug\net5.0\ref\Reception.dll
+C:\Corso\20211025DevOpsAzure\Reception\obj\Debug\net5.0\Reception.pdb
+C:\Corso\20211025DevOpsAzure\Reception\obj\Debug\net5.0\Reception.genruntimeconfig.cache

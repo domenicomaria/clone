@@ -1,0 +1,160 @@
+GOVERN METHODOLOGY PER IL CLOUD
+La governance del cloud crea dei guardrail che mantengono l'azienda su un percorso sicuro durante tutto il viaggio. Il Cloud Adoption Framework fornisce guide di governance basate sulle esperienze di clienti reali. Ogni guida segue il cliente attraverso gli aspetti di governance della sua adozione del cloud. 
+
+Il modello di governance del Cloud Adoption Framework identifica le aree chiave. Ogni area si riferisce a diversi tipi di rischi che l'azienda deve affrontare man mano che adotta più servizi cloud. All'interno di questa struttura, la guida alla governance identifica le azioni necessarie per il team di governance del cloud. Tra i rischi e le discipline si hanno:
+
+- Politiche aziendali: Le politiche aziendali guidano la governance del cloud. La guida alla governance si concentra su aspetti specifici della politica aziendale:
+1. Rischi aziendali: Identificazione e comprensione dei rischi aziendali.
+2. Politica e conformità: Convertire i rischi in dichiarazioni di policy che supportano qualsiasi requisito di conformità.
+3. Processi: Assicurare l'aderenza alle politiche dichiarate.
+
+- Cinque discipline della governance del cloud: Queste discipline supportano le politiche aziendali. Ogni disciplina protegge l'azienda da potenziali insidie:
+1. Disciplina della gestione dei costi
+2. Disciplina della linea di base della sicurezza
+3. Disciplina della coerenza delle risorse
+4. Disciplina della linea di base dell'identità
+5. Disciplina di accelerazione della distribuzione
+
+Essenzialmente, le politiche aziendali servono come sistema di allarme preventivo per rilevare potenziali problemi. Le discipline aiutano l'azienda a gestire i rischi e a creare dei guardrail.
+La governance IT deve muoversi rapidamente e tenere il passo delle richieste del business per rimanere rilevanti durante la cloud adoption ed evitare lo shadow IT.
+
+Un approccio di governance incrementale rafforza queste caratteristiche. La governance incrementale si basa su un piccolo insieme di politiche, processi e strumenti aziendali per stabilire una base per l'adozione e la governance. Questa base è chiamata prodotto minimo realizzabile (MVP). Un MVP permette al team di governance di incorporare rapidamente la governance nelle implementazioni durante tutto il ciclo di vita dell'adozione. Un MVP può essere stabilito in qualsiasi momento durante il processo di adozione del cloud. È una buona pratica adottare un MVP il prima possibile.
+
+Il team di governance del cloud può unirsi al team di strategia del cloud come scout, precedendo i team di adozione del cloud, tracciando i percorsi e stabilendo rapidamente dei guardrail per gestire i rischi associati ai piani di adozione. Questi livelli di governance just-in-time sono noti come iterazioni di governance. Con questo approccio, la strategia di governance cresce un passo avanti rispetto ai team di adozione del cloud. Durante le iterazioni, vengono definite ulteriori politiche aziendali per porre rimedio ai nuovi rischi. La disciplina Deployment Acceleration applica quindi tali modifiche in ogni implementazione.
+
+
+
+Shadow IT è un termine usato per descrivere sistemi e soluzioni IT implementati e usati all’interno delle organizzazioni senza l'approvazione esplicita dell’organizzazione stessa. È usato, con il termine “Stealth IT” (IT furtiva), per descrivere soluzioni specificate e implementate da reparti diversi da quello IT. E' considerata da molti un’importante fonte per l’innovazione e sistemi di questo tipo potrebbero risultare essere prototipi per soluzioni IT future.
+Sebbene l’espressione abbia una etichetta neutra, il termine spesso porta con sé una connotazione negativa per via del fatto che il dipartimento IT non approva una determinata tecnologia o non sa che i dipendenti la utilizzano. Inoltre, le tecnologie che operano ad insaputa del reparto IT possono influire negativamente sull’esperienza utente di altri dipendenti, influenzando le performance della rete e creando situazioni in cui i protocolli di rete o delle applicazioni software vanno in conflitto. Lo shadow IT può anche diventare un problema di compliance(ovvero di non conformità alla norme) quando, ad esempio, un dipendente archivia i dati aziendali nel proprio account di storage cloud personale. Quando i lavoratori di un’azienda possono ottenere ciò di cui hanno bisogno all’insaputa del team IT o senza la sua approvazione è difficile mantenere un livello di sicurezza informatica efficace all'interno dell'organizzazione alzando, ad esempio, il rischio di subire data breach.
+
+
+
+GUIDE ALLA GOVERNANCE DEL CLOUD
+
+Le guide alla governance illustrano l'approccio incrementale del modello di governance del Cloud Adoption Framework, basato sulla metodologia Governance. E' possibile stabilire un approccio agile alla governance del cloud che crescerà per soddisfare le esigenze di qualsiasi scenario di governance del cloud. E' possibile scegliere tra due guide di governance:
+Guida alla governance standard : guida per la maggior parte delle organizzazioni basata sul modello consigliato a due abbonamenti, progettata per distribuzioni in più regioni ma non su cloud pubblici e sovrani/governativi.
+
+Caratteristiche aziendali
+Geografia:I clienti o il personale risiedono in gran parte in un'area geografica
+Unità aziendali interessate: Unità aziendali che condividono un'infrastruttura IT comune
+Budget IT:Budget IT unico
+Investimenti IT: Gli investimenti basati sulle spese di capitale sono pianificati annualmente e di solito coprono solo la manutenzione di base.
+
+Guida alla governance per aziende complesse : guida per le aziende gestite da più unità aziendali IT indipendenti o che si estendono su cloud pubblici e sovrani/governativi.
+
+Caratteristiche aziendali
+Geografia:I clienti o il personale risiedono in più aree geografiche o richiedono cloud proprietari.
+Unità aziendali interessate:Più unità aziendali che non condividono un'infrastruttura IT comune.
+Budget IT:Budget allocato tra unità aziendali e valute.
+Investimenti IT: Gli investimenti basati sulle spese di capitale sono pianificati annualmente e spesso includono la manutenzione e un ciclo di aggiornamento da tre a cinque anni.
+
+Le guide illustrano come implementare un MVP della governance e illustrano come implementare un MVP della governance. Mostrano come il team di governance del cloud può lavorare prima dei team di adozione del cloud come partner per accelerare gli sforzi di adozione. Il modello di governance del Cloud Adoption Framework guida l'applicazione della governance dalla base attraverso miglioramenti ed evoluzioni successive.
+
+L'approccio CAF enterprise-scale landing zone viene usato per sfruttare al meglio le capacità della piattaforma cloud di Azure rispettando i requisiti di sicurezza e governance di un'azienda. Rispetto ai tradizionali ambienti locali, Azure consente ai team di sviluppo dei carichi di lavoro e ai loro sponsor aziendali di sfruttare la maggiore agilità di distribuzione offerta dalle piattaforme cloud. Questo approccio si concentra sui team di adozione che hanno un obiettivo a medio termine (entro 24 mesi) di ospitare più di 1.000 risorse (applicazioni, infrastrutture o risorse di dati) nel cloud .
+
+GUIDA ALLA GOVERNANCE PER AZIENDE STANDARD.
+In essa viene fornita una panoramica in merito alle best practices da adottare, riassunte dai seguenti punti: 
+1.	ORGANIZZAZIONE DELLE RISORSE: Ogni applicazione deve essere distribuita nell'area appropriata rispetto a: gruppo di risorse, sottoscrizione e gerarchia dei gruppi di risorse. Durante la pianificazione della distribuzione, il team di governance del cloud creerà i nodi necessari nella gerarchia per i team responsabili dell'adozione del cloud
+2.	GOVERNANCE DELLE RISORSE: Un set di global policies ed RBAC fornisce un livello base di implementazione della governance. 
+3.	Identificare le definizioni dei criteri: Azure offre vari criteri e definizioni di ruolo predefiniti che è possibile assegnare a qualsiasi gruppo di gestione, sottoscrizione o gruppo di risorse. È possibile gestire molti requisiti di governance comuni con le definizioni predefinite. Tuttavia, è probabile che sarà anche necessario creare definizioni di criteri personalizzate per gestire esigenze specifiche.
+4.	ASSEGNAZIONE DEI RUOLI RBAC TRAMITE AZURE BLUEPRINTS: È possibile assegnare i criteri di Azure a livello di gruppo di risorse, sottoscrizione e gruppo di gestione e includerli nelle definizioni di Azure Blueprints. I progetti Azure Blueprints consentono l'assegnazione coerente di criteri e ruoli, l'applicazione di modelli di Resource Manager e la distribuzione di gruppi di risorse tra più sottoscrizioni. Analogamente alle definizioni di criteri, le definizioni di progetti vengono salvate in gruppi di gestione o sottoscrizioni. Le definizioni di criteri sono disponibili tramite ereditarietà per qualsiasi elemento figlio nella gerarchia del gruppo di gestione.
+5.	Rete virtuale ibrida protetta: Accade spesso che specifiche sottoscrizioni richiedano un certo livello di accesso alle risorse locali. Questo è comune negli scenari di migrazione o sviluppo in cui risorse dipendenti risiedono nel data center locale. Fino a quando non viene stabilita l'attendibilità completa nell'ambiente cloud, è importante controllare e monitorare con grande attenzione qualsiasi comunicazione tra l'ambiente locale e i carichi di lavoro nel cloud e assicurarsi che la rete locale sia protetta da possibili accessi non autorizzati da risorse basate sul cloud.
+6.	MIGLIORAMENTI ITERATIVI DELLA GOVERNANCE: Una volta distribuito l'MVP (minimum viable product), è possibile integrare rapidamente livelli aggiuntivi di governance nell'ambiente. 
+
+
+
+
+SECURITY BASELINE
+
+La security baseline è una delle cinque discipline della cloud governance all'interno del modello di governance del Cloud Adoption Framework. La sicurezza è una componente di qualsiasi implementazione IT e il cloud introduce problemi di sicurezza unici. Molte aziende sono soggette a requisiti normativi che rendono la protezione dei dati sensibili una delle principali priorità organizzative quando si considera una trasformazione della propria realtà cloud. Identificare le potenziali minacce alla sicurezza dell'ambiente cloud e stabilire processi e procedure per affrontarle dovrebbe essere una priorità per qualsiasi team di sicurezza IT o di cybersecurity. La disciplina della Security Baseline assicura che i requisiti tecnici e i vincoli di sicurezza siano applicati in modo coerente agli ambienti cloud, man mano che tali requisiti maturano.
+
+La disciplina della linea di base della sicurezza cerca di affrontare i principali rischi aziendali legati alla sicurezza. Tra i rischi più comuni:
+- Violazione dei dati: L'esposizione involontaria o la perdita di dati sensibili ospitati nel cloud può portare alla perdita di clienti, a problemi contrattuali o a conseguenze legali.
+- Interruzione del servizio: Le interruzioni e altri problemi di prestazioni dovuti a un'infrastruttura insicura interrompono le normali operazioni e possono comportare una perdita di produttività o di affari.
+
+Definire metriche e indicatori aiuta a maturare tale disciplina.
+I seguenti sono esempi di metriche utili per aiutare a valutare la tolleranza al rischio all'interno della Security Baseline: Data Classification, numero di data stores sensibili e non criptati, superfici di attacco, attacchi discriminati da livelli di severità, protezioni da malware etc. Il link di riferimento è:
+https://docs.microsoft.com/en-us/azure/cloud-adoption-framework/govern/security-baseline/metrics-tolerance
+Nello stesso link abbiamo anche gli indicatori di rischio. Questi fungono da trigger per quando è necessario agire per rimediare a questi rischi. Tra i principali abbiamo il mission-critical workloads trigger, il protected data trigger, l'external attacks trigger etc... (vedi link). Le esatte metriche e i trigger da utilizzare per valutare la tolleranza al rischio e il livello di investimento nella disciplina Security Baseline sono specifici per ciascuna organizzazione. 
+
+Le dichiarazioni sulla politica del cloud individuale sono linee guida per affrontare i rischi specifici identificati durante il processo di valutazione dei rischi. Queste dichiarazioni dovrebbero fornire un riassunto conciso dei rischi e dei piani per affrontarli. La definizione di ogni dichiarazione dovrebbe includere queste informazioni:
+- Rischio tecnico: Un riassunto del rischio che questa politica affronterà.
+- Dichiarazione di politica: Una chiara spiegazione riassuntiva dei requisiti della politica.
+- Opzioni tecniche: Raccomandazioni attuabili, specifiche o altre linee guida che i team IT e gli sviluppatori possono usare quando implementano la policy.
+
+Quella che segue è una serie di processi di esempio comunemente coinvolti nella disciplina della Security Baseline. 
+1. Valutazione iniziale del rischio e pianificazione: allo start della disciplina della Security Baseline, identificate i vostri rischi aziendali principali e le tolleranze relative alla sicurezza del cloud. Utilizzate queste informazioni per discutere i rischi tecnici specifici con i membri dei vostri team IT e di sicurezza e sviluppate una serie di politiche di sicurezza di base per mitigare questi rischi per stabilire la vostra strategia di governance iniziale.
+2. Pianificazione del deployment: Prima di distribuire qualsiasi carico di lavoro o risorsa, eseguire una revisione della sicurezza per identificare qualsiasi nuovo rischio e garantire che tutti i requisiti di accesso e di sicurezza dei dati siano soddisfatti.
+3. Test di deployment: Come parte del processo di distribuzione di qualsiasi carico di lavoro o risorsa, il team di governance del cloud, in collaborazione con i team di sicurezza aziendali, sarà responsabile della revisione della distribuzione per convalidare la conformità alle policy di sicurezza.
+4. Pianificazione annuale: Su base annuale, esegui una revisione di alto livello della strategia della Security Baseline. Esplorare le future priorità aziendali e le strategie aggiornate di adozione del cloud per identificare il potenziale aumento del rischio e altre esigenze emergenti di sicurezza. Utilizza anche questo tempo per rivedere le più recenti best practice della baseline di sicurezza e integrarle nelle tue politiche e nei processi di revisione.
+5. Revisione e pianificazione trimestrale: Su base trimestrale eseguire una revisione dei dati di controllo della sicurezza e dei rapporti sugli incidenti per identificare eventuali modifiche necessarie nella politica di sicurezza. Come parte di questo processo, rivedete l'attuale panorama della cybersecurity per anticipare proattivamente le minacce emergenti e aggiornate la policy come appropriato. Una volta completata la revisione, allineare la guida alla progettazione con la politica aggiornata.
+6. Questo processo di pianificazione è anche un buon momento per valutare l'attuale composizione del team di governance del cloud per individuare le lacune di conoscenza relative a policy e rischi nuovi o mutevoli relativi alla sicurezza. Invitate il personale IT pertinente a partecipare alle revisioni e alla pianificazione come consulenti tecnici temporanei o membri permanenti del vostro team.
+7. Istruzione e formazione: Su base bimestrale, offri sessioni di formazione per assicurarti che il personale IT e gli sviluppatori siano aggiornati sugli ultimi requisiti della politica di sicurezza. Come parte di questo processo, rivedete e aggiornate qualsiasi documentazione, guida o altre risorse di formazione per assicurarvi che siano in sincronia con le ultime dichiarazioni di politica aziendale.
+8. Revisioni mensili di audit e reporting: Su base mensile, eseguire un controllo su tutte le implementazioni cloud per assicurare il loro continuo allineamento con la politica di sicurezza. Rivedere le attività relative alla sicurezza con il personale IT e identificare qualsiasi problema di conformità che non sia già stato gestito come parte del processo di monitoraggio e applicazione in corso. Il risultato di questa revisione è un rapporto per il team di strategia del cloud e ogni team di adozione del cloud per comunicare l'aderenza complessiva alla policy. Il rapporto viene anche conservato per scopi di auditing e legali.
+
+
+
+MIGLIORAMENTO E IMPLEMENTAZIONE RELATIVA AI COSTI
+
+Il miglioramento relativo al monitoraggio dei costi passa attraverso i seguenti punti:  
+
+1) Aggiunta alle risorse cloud di reportistica e strumenti di monitoraggio di questi ultimi.
+2) Modifiche ai rischi tangibili in quanto esiste un rischio intrinseco che le funzionalità self-service comportino costi eccessivi e imprevisti per la nuova piattaforma. I processi di governance per i costi di monitoraggio e i costi di migrazione devono poter garantire un costante allineamento con il budget pianificato.
+3) Miglioramento incrementale relativo ai criteri di monitoraggio dei costi e delle risorse cloud, in modo tale da capire se sia possibile ottimizzare le risorse e, di conseguenza, avere un impatto sui costi. 
+4) Miglioramento incrementale delle best practices da utilizzare per ridurre i costi. 
+
+Oltre a ciò, va detto che la gestione dei costi è una delle principali preoccupazioni riguardo all'adozione di tecnologie cloud. Trovare il giusto equilibrio tra le risorse di cui un’azienda ha bisogno, tempi di implementazione e costi dei servizi cloud può rivelarsi un'impresa difficile. La disciplina di Gestione dei costi tiene conto dei rischi aziendali di base correlati alle spese che si sostengono quando si utilizzano le tecnologie cloud. I rischi variano a seconda dell'organizzazione, ma è possibile individuarne alcuni di base, quali i seguenti: 
+
+1) Non controllo del budget: che può comportare una spesa eccessiva con un fornitore di cloud.
+2) Mancanza di utilizzo: è possibile che vengano acquistate delle risorse che poi non verranno utilizzate
+3) Anomalie di spesa: sono dei picchi imprevisti che possono essere anche degli indicatori di utilizzo non corretto.
+4) Asset con over provisioning: Quando gli asset vengono distribuiti in una configurazione che supera le esigenze di un'applicazione o di una macchina virtuale (VM)
+
+La gestione dei costi è in genere incentrata sulle metriche correlate ad essi. Nell'ambito dell'analisi dei rischi, è necessario raccogliere i dati relativi alla spesa corrente e pianificata per i carichi di lavoro basati sul cloud, per determinare il livello di rischio e l'importanza dell'investimento nella disciplina Gestione costi per le distribuzioni cloud pianificate. Di seguito sono riportati esempi di metriche utili da raccogliere per valutare la tolleranza ai rischi all'interno della disciplina Gestione costi:
+
+- Spesa annuale: Costo annuale totale per i servizi forniti da un provider di servizi cloud.
+- Spesa mensile: Costo mensile totale per i servizi forniti da un provider di servizi cloud.
+- Rapporto previsto ed effettivo: Rapporto che confronta la spesa prevista ed effettiva (mensile o annuale).
+- Tasso di adozione (mese dopo mese): delta percentuale dei costi del cloud da un mese all'altro.
+- Costo accumulato: Spesa giornaliera accumulata totale, a partire dall'inizio del mese.
+- Tendenze di spesa: Tendenza di spesa rispetto al budget.
+
+Va detto inoltre che Azure mette a disposizione degli strumenti per monitorare i costi delle risorse, dal momento che questa è una delle cinque discipline di Governance del cloud.  
+
+FONTI:
+https://docs.microsoft.com/it-it/azure/cloud-adoption-framework/govern/guides/standard/cost-management-improvement
+
+https://docs.microsoft.com/it-it/azure/cloud-adoption-framework/govern/cost-management/business-risks
+
+
+
+GLOSSARIO
+
+USECASE: è un modo di approcciare un problema, frammentandolo in sotto-problemi adiacenti e vedere se è possibile scomporre anche questi ultimi. Gli usecase in informatica sono degli scenari reali che vengono utilizzati come esempio nella risoluzione di un problema pratico. Tutto questo sulla base di un’ottica customer centerd, in cui sarà il cliente a fornire i casi d’uso.  Ad esempio, nell’implementazione di un sw un usecase è un test.
+
+
+Rischio tangibile dei cambiamenti delle risorse
+Interruzione dell'attività: esiste il rischio intrinseco che qualsiasi nuova piattaforma possa causare interruzioni dei processi aziendali mission-critical. Il team delle operazioni IT e i team che eseguono varie adozioni cloud sono relativamente inesperti con le operazioni cloud. Ciò aumenta il rischio di interruzione e deve essere corretto e disciplinato.Questo rischio aziendale può essere esteso a diversi rischi tecnici. Esistono politiche che aiutano a rimediare ai nuovi rischi e a guidare nell'implementazione. 
+
+E' possibile cambiare il design MVP della governance per includere nuovi criteri di Azure e un'implementazione di Azure Cost Management + Billing. Insieme, queste due modifiche al design potranno soddisfare nuove dichiarazioni della politica aziendale.
+1)Il team delle operazioni cloud definirà gli strumenti di monitoraggio operativo e gli strumenti di riparazione automatizzata.
+2)Crea un repository in Azure DevOps per archiviare e eseguire la versione di tutti i modelli di Resource Manager rilevanti e le configurazioni con script.
+3)Implementazione dell'insieme di credenziali di Servizi di ripristino di Azure
+4)Aggiorna i criteri di Azure per tutte le sottoscrizioni
+5)Implementazione di monitoraggio di Azure
+6)Aggiorna i criteri di Azure per tutte le sottoscrizioni che contengono applicazioni mission-critical.
+7)Configurazione del firewall
+8)Azure blueprint
+Questi processi aggiuntivi e modifiche all'MVP della governance aiutano a rimediare a molti dei rischi associati alla governance delle risorse e insieme aggiungono controlli di ripristino, dimensionamento e monitoraggio che potenziano le operazioni cloud-aware.
+
+
+La coerenza delle risorse è una delle cinque discipline della governance del cloud all'interno del modello di governance del framework di adozione del cloud. Questa disciplina si concentra sui modi per stabilire criteri relativi alla gestione operativa di un ambiente, un'applicazione o un carico di lavoro. I team operativi IT spesso forniscono il monitoraggio delle applicazioni, del carico di lavoro e delle prestazioni delle risorse. Di solito eseguono anche le attività necessarie per soddisfare le richieste di scalabilità, porre rimedio alle violazioni del contratto di servizio (SLA) delle prestazioni ed evitare in modo proattivo le violazioni degli SLA delle prestazioni attraverso la correzione automatizzata. All'interno delle Cinque Discipline della Cloud Governance, la disciplina Resource Consistency garantisce che le risorse siano configurate in modo coerente in modo tale da poter essere individuate dalle operazioni IT, incluse nelle soluzioni di ripristino e integrate in processi operativi ripetibili.
+
+E' possibile sviluppare dichiarazioni sulla politica di governance tramite i seguenti strumenti:
+
+1)Modello di disciplina della coerenza delle risorse: per documentare e comunicare le dichiarazioni dei criteri che regolano le operazioni e la gestione IT nel cloud come i rischi aziendali, le tolleranze di rischio, i processi di conformità e gli strumenti necessari per definire le dichiarazioni dei criteri di coerenza delle risorse della tua organizzazione
+2)Rischi aziendali : comprendere i motivi e i rischi comunemente associati alla disciplina della coerenza delle risorse come Costo operativo non necessario, Risorse con provisioning insufficiente, Inefficienze gestionali, Interruzione dell'attività.
+3)Indicatori e metriche : Indicatori per capire se è il momento giusto per investire nella disciplina Resource Consistency.
+4)Processi di aderenza alle policy : Processi suggeriti per supportare la conformità alle policy nella disciplina Resource Consistency.
+5)Maturità : allinea la maturità della gestione del cloud con le fasi di adozione del cloud.
+6)Toolchain : servizi di Azure che possono essere implementati per supportare la disciplina Resource Consistency.

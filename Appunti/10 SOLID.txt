@@ -1,0 +1,12 @@
+S.
+Single Responsability Principle
+una classe dovrebbe occuparsi di un singolo limitato problema
+O.
+Open Close Principle
+una classe dovrebbe essere aperta all'estensione e chiusa alla modifica
+L.
+Liskov inversion principle devo poter sostituire in un programma già scritto agli oggetti di una certa classe, oggetti di classi derivate senza compromettere il funzionamento
+I. 
+interface segregation principle : meglio utilizzare brevi interfaccie multiple che grandi interfacce 
+D.
+Dependency Inversion Principle: Una classe dovrebbe dipendere dalle astrazioni, non da classi concrete.

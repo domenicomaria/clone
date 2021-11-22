@@ -1,0 +1,24 @@
+﻿@model List<Reception.Postazione>
+
+@{
+    ViewData["Title"] = "Postazioni";
+}
+<table>
+   
+  <tr>
+    <th>Id</th>
+    <th>Piano</th>
+    <th>CodiceStanza</th>
+    </tr>
+
+@foreach (Reception.Postazione p in Model)
+{
+
+    <tr>
+    <td>@p.Id</td>
+    <td>@p.Piano</td>
+    <td>@p.CodiceStanza</td>
+  </tr>
+      
+}
+</table>

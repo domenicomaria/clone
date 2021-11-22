@@ -1,0 +1,24 @@
+ciclo di vita di un sw
+
+Si inizia scrivendo un sw in un certo linguaggio di programmazione (human-readable) come sql, C#, Python ...
+Lo step successivo consiste nel compilare il codice human-readable scritto prima, ovvero trasformare il codice scritto prima in un codice binario in tale modo sia capito 
+dalla macchina.
+Per controllare se il sw scritto e compilato, si effetuano dei test unitari e funzionali; 
+Test unitari: servono a vedere se tutte le unità del sotware, che fino a ieri funzionavano, oggi con un'aggiunta nuova funziona ancora.
+Test funzionari: più completi, sono volti a isolare parti del sotware indipendentemente dalle dipendenze.
+
+Alcuni test vengono automatizzati in modo che lo svilupatore possa confermare le funzionalità. Questa procedura viene chiamata TDD: Test Driven Development.
+AMBIENTE DEBUG: è l'ambiente locale di un singolo sviluppatore (Sviluppatore + pc + scrivania)
+
+Il rilascio del sw si fa in 2 ambienti:
+ 
+- AMBIENTE TEST: l'ambiente test del team è l'ambiente condiviso da tutto il team di sviluppo dove si rilascia una versione del sw scritto da tutto il team. Prima di condividere 
+il sw con il cliente, viene validata dal team (chiudere item nella lavagna).
+
+- AMBIENTE STAGE: (ambiente quasi uguale a quello di produzione) in questo ambiente si rilascia una versione del sw che funziona perfettamente per fare vedere le nuove funzionalità al cliente che potrebbe accetare o meno. In 
+caso il cliente non abbia accettato le nuove funzionalità o se qualcosa non funziona si effetua un rollback alla versione precedente, altrimenti, il sw va messo in produzione.
+
+-AMBIENTE DI PRODUZIONE (pubblico)
+
+La fase successiva del ciclo di vita del sw è la fase di manutenzione che consiste nel aggiornare un sw preesistene perché c'è un bug da risolvere oppure per aggiornare una o più 
+funzionalità.

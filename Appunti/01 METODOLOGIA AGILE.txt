@@ -1,0 +1,56 @@
+INTRODUZIONE CONCETTI METODOLOGIA AGILE, SCRUM, LAVAGNA DI KANBAN, DEVOPS
+
+Il Ciclo di vita di un software si divide nelle seguenti fasi:
+- progettare
+- scrivere
+- consegnare (installazione e/o rilascio) 
+- manutenenzione / modifica
+
+METODOLOGIA AGILE: è una categoria di metodologie Client-centered utilizzata in fase di progettazione, e consiste nella presa in carico della richiesta 
+assecondando le esigenze del cliente. Tale metodologia allo stesso tempo valorizza al massimo il team di lavoro. Una tra le metodologie Agile più utilizzate è la 
+SCRUM, basato su alcuni elementi essenziali riportati di seguito.
+
+Lo STAND UP MEETING è un incontro in gruppi di 5/7 persone in un ambiente inospitale che permette di evidenziare gli aspetti essenziali alle quali si perviene
+già in maniera ragionata (macchinetta del caffe, bar, sotto alle scale scale). Secondo la metodologia Agile ogni gruppo di lavoro prende decisioni senza 
+impedimenti di altri team per il proprio task. Ciascun team di lavoro può iniziare solo una volta ricevute le Specifiche Tecniche dal Cliente e formalizzato un 
+contratto. 
+
+Gli ITEM sono tutti quei processi già stati affrontati (durante gli Stand Up Meeting) e che sono pronti per essere utilizzati.
+Ciascun item percorre diversi stati riportati in seguito, e deve essere eseguito fino a chiusura.
+
+
+LA LAVAGNA DI KANBAN (Toyota anni '80) riporta gli item e gli stati associati a ciascuno di essi.
+Il processo da back log a chiusura non ammette salti all'indietro nel processo, pertanto si tratta di stati sequenziali l'uno all'altro. 
+Diversamente, gli item che seguono processi errati vengono rimessi in coda nel back log.
+Di seguito degli esempi.
+
+back log    |  progress    |   testing    |  chiuso
+---------------------------------------------------------------
+						item 1 Daniele	esaminare le aspettative 15/15 min
+						assegnare, quotare, e dire a che punto sono
+
+						item 2 Daniele 100min/15 min cominciare a rompere il ghiaccio 		
+
+item 3 Daniele, rompere il ghiaccio con chi era assente il primo giorno
+
+
+				item 4 Daniele 5 minuti 30 min scrum/ agile
+
+				item 5 Daniele 15/20min Lavagna di Kanban
+--------------------------------------------------------------
+
+Per DEVOPS si intende un modello che nasce dall'unione di Developers e Operations e che avvicina e fa collaborare il più possibile il team dei programmatori 
+e il team dei sistemisti, estendendo il concetto della metodologia Agile non solo al codice, ma all'intero processo. 
+Lo scopo è anche qui realizzare un unico flusso di lavoro condiviso, ben pianificato e rapido nei passaggi.
+
+Il PAIR PROGRAMMING invece è una tecnica agile di extreme programming di sviluppo software nella quale più sviluppatori/designer (membri del team di lavoro) 
+lavorano utilizzando una stessa postazione di lavoro, l'uno conducendo e gli altri osservando e correggendo ev. errori.
+
+Una ITERAZIONE è il tempo che intercorre tra il mettere un item in back log e il momento della consegna.
+
+Il WIP è la capacità di Work in Progress. Per es. avendo 5 team workers in modalità Pair Programming (2 + 3) si ha un tempo di WIP di 16 ore, 
+ossia 2 gruppi x 8 ore.
+
+LA RETROSPETTIVA  è un meeting di festeggiamento in occasione di brindisi dove ogni team worker elenca su un post it pochi (es. 3) aspetti positivi e 
+negativi del progetto su cui ha lavorato. I post it sono anonimi, si leggono tali aspetti e si votano, discutendo poi gli N aspetti più comuni che sono emersi.
+Gli aspetti negativi sono utili per essere risolti nella successiva iterazione.

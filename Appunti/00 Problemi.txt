@@ -1,0 +1,7 @@
+PROBLEMI EVIDENZIATI DURANTE LA PRIMA LEZIONE:
+1 Non è possibile tornare indietro da uno stadio all’altro dell’Item, lungo il ciclo produttivo del sw.
+2 Bisogna lavorare per competenza e non per gerarchia.
+3 Bisogna interpellare il cliente per comprendere al meglio di cosa si occupa e fornirgli ciò di cui ha bisogno.
+4 È importante fare vedere al cliente il lavoro svolto quotidianamente e rilasciare tutte le sere qualcosa in ambiente di stage.
+5 È importante non avere dei fuori-flusso perché questo potrebbe comportare dei costi ulteriori per il cliente. 
+6 Incomprensioni

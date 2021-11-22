@@ -1,0 +1,17 @@
+Il Domain Driven Development (DDD) è il concetto secondo cui la struttura ed il linguaggio del codice software devono corrispondere al dominio   in cui opera il cliente.
+Per dominio si intende un contesto principale oppure un insieme di tematiche legate da qualche elemento comune.
+Alla base del DDD vi è la necessità di comprendere nel miglior modo possibile il problema del cliente ed immedesimarsi nel suo punto di vista. Pertanto bisogna conoscere bene il contesto in cui lavora il cliente e per farlo ho bisogno di intervistarlo, tramite un referente facilmente reperibile, ponendo domande mirate al fine di conoscere il processo nello specifico, ma avendo comunque una visione di insieme.
+
+Un modello di dominio offre diversi vantaggi, alcuni dei quali sono:
+
+•	Aiutare il team a creare un modello comune tra l'azienda e gli stakeholder, che il team può utilizzare per comunicare sui requisiti aziendali, sulle entità di dati e sui modelli di processo;
+•	Il modello è modulare, estendibile e di facile manutenzione poiché il design riflette il modello di business;
+•	Migliorare la riutilizzabilità e la verificabilità degli oggetti del dominio in cui opera il cliente.
+
+Avere un modello su cui operare permette di agire in modo mirato e tempestivo per risolvere le esigenze riscontrate dai clienti.
+
+Il Continuous Delivery è la procedura che permette di spezzettare un lavoro in tanti piccoli blocchi da consegnare al cliente in modo più rapido e costante nel tempo. 
+
+Questo si lega al DDD dato che c’è uno stretto contatto col cliente. Infatti, consegnando giornalmente e più costantemente al cliente, si crea un rapporto migliore e permette di chiudere gli item in modo definitivo. Inoltre si riesce ad agire tempestivamente su eventuali errori o difformità tra richiesta e consegna. Tutto questo crea una maggiore soddisfazione da parte del cliente, dato che si sente partecipe e, soprattutto, si dimostra giornalmente il lavoro che viene svolto per arrivare alla consegna del prodotto finale.
+
+Un fattore determinante è la terminologia, ovvero come il cliente chiama e definisce l’oggetto/prodotto in questione. Se il cliente utilizza un determinato nome o una determinata terminologia, è importante che io utilizzi le stesse parole, sia nella forma verbale che nella forma scritta, come esempio sul contratto o nel progetto. Evitare di perdere il knowhow specifico è finalizzato ad una comunicazione più snella e per avere una conoscenza trasversale, utile a finalizzare il progetto nel modo più tempestivo e completo possibile.

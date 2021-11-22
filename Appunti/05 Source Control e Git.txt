@@ -1,0 +1,72 @@
+
+GIT è un tool di version control, ossia è finalizzato a mantenere
+un albero di versionamento del codebase, sul quale è possibile collaborare in più
+persone.
+
+
+In poche parole è un repository di codice sorgente che consente di:
+
+1 Archiviare i files di testo (NO COMPILATI)
+2 Mantenere le versioni nel tempo
+3 Collaborare con il team, scambiando il materiale
+
+Le azioni che si possono compiere sono le seguenti:
+
+1- CLONE
+Accedo al repo git su server e scarico tutti i files del repository alla loro versione al momento della clonazione.
+
+2- PULL
+Verifico se sul SERVER GIT ci sono modifiche apportate da altri. Tramite questa operazione, è possibile 
+scaricare sulla propria macchina lo stato attuale della codebase presente nel source tree remoto.
+
+3- COMMIT
+Serve a confermare le modifiche che ho fatto in locale, 
+creando una nuova versione della repository e aggiungendola all'albero di git.
+
+4- DISCARD 
+Mi consente di annullare le modifche che ho fatto in locale, riportando il file alla situazione precedente.
+
+5- PUSH
+Condivide il mio albero locale (nel quale ho eseguito le opportune modifiche) con gli altri, 
+archiviandolo su server GIT e conciliando le differenze.
+
+Le tre operazioni fondamentali per condividere codice sono: pull, commit e push.
+
+Il push si esegue quando il programma ha superato opportuni test con esito positivo e,
+solo in tal caso il programma può essere "PUSHATO" nel ramo Master, in cui verrà osservato dagli altri sviluppatori e dai watcher.
+
+
+Di seguito è possibile notare, mediante uno schema ad albero, 
+il procedimento sopra descritto:
+
+KANBAN
+
+                                                abc
+
+
+MAIN
+V 
+|
+|
+V1--------------- (correzione sfondi)|     
+|                                    |     
+|                                    |
+|                                    |
+|                                    V1.1
+|
+|                                    |
+|                                    |
+|                                    |
+V2------| DEV NOMEMODIFICA 
+|        (es: G gialla su tutto il sito vedi TASK abc)
+|        V2.1                        |
+|        |                           |
+|                                    |                           
+|        V2.2 = V.2.1 + 1.1 ----------
+|        |
+|---------
+V3
+
+
+Tipicamente si effettua il commit sicuramente il sw compila, e eventualmente restituisce un buon risultato.
+

@@ -1,0 +1,72 @@
+esempio figure geometriche
+
+dominio (perimetro) applicativo
+1- che figure vuoi gestire : rettangoli e quadrati, triangoli e cerchio.
+2- che tipo di operazioni vuoi svolgere: spostare sul piano di lavoro, calcolare  superficie e perimetro, stampare 
+3- 2d : ok 
+4- dimensioni o formato del piano di lavoro: A4 interamente contenuta nel foglio
+5- colori: ok.
+
+
+entità: 
+
+? esiste una figura base che mi copre le tematiche in comune tra le varie figure?
+
+punto 
+    real x;
+    real y;
+angolo
+    grado ampiezza;
+
+colore
+    int red;
+    int green;
+    int blue;
+
+piano di lavoro (è un rettangolo con misura fissa A4)
+
+triangolo
+    get; set int id
+    get;set 3 coordinate dei vertici
+        3 punto
+    get NO SET base, altezza ->> area ok, 
+        real base
+        real altezza
+    get NO SET misura dei lati ->> perimetro ok;
+        real[3] lati
+    get NO SET misura degli angoli
+        gradi[3] angolo
+    get posizione 
+    metodo ritorna l'area
+    metodo ritorna perimetro
+    metodo muovi(?)
+    colore contorno
+    colore riempimento
+
+rettangolo
+    get; set int id
+    get;set coordinate dei vertici
+        punto[4]
+    get; no set base, altezza ->> area ok, perimetro ok. 
+        real base
+        real altezza
+    get; no set misura dei lati
+        real[4] lati
+    metodo ritorna l'area
+    metodo ritorna perimetro
+    metodo muovi(?)
+    colore contorno
+    colore riempimento
+    
+quadrato: caso particolare di rettangolo con tutti i lati uguali
+
+cerchio
+    get; set int id
+    real raggio
+    coordinate del centro
+        real punto
+    metodo ritorna l'area
+    metodo ritorna circonferenza (perimetro)
+    metodo muovi(?)
+    colore contorno
+    colore riempimento

@@ -1,0 +1,17 @@
+tutti i tipi di app in dot net
+https://docs.microsoft.com/en-us/dotnet/core/tools/dotnet-new-sdk-templates
+
+
+app completa EF e web api con modelli ed Attributi per EF (annotazioni)
+https://dev.to/jessicanathany/creating-a-simple-project-web-api-with-vscode-and-entity-framework-3jj1
+
+app EF con procedimenti diversi
+https://docs.microsoft.com/it-it/archive/msdn-magazine/2016/august/asp-net-core-write-apps-with-visual-studio-code-and-entity-framework
+
+EF e migrazioni
+https://www.learnentityframeworkcore.com/walkthroughs/aspnetcore-application
+
+Esempio già visto
+https://docs.microsoft.com/en-us/aspnet/core/tutorials/first-web-api?view=aspnetcore-5.0&tabs=visual-studio-code
+
+argomento di possibile approfondimento EF Fluent Api 

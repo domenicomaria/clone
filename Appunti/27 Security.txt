@@ -1,0 +1,56 @@
+La panoramica sulla sicurezza su Azure è suddivisa in due sezioni:
+Le tendenze, che forniscono una cronologia del rischio nella tua organizzazione, ad esempio Rilevati nuovi utenti a rischio e Rilevati nuovi accessi rischiosi.
+I riquadri, che evidenziano i principali problemi in corso nella tua organizzazione e suggeriscono come agire rapidamente, ad esempio, Utenti ad alto rischio, Utenti a rischio medio, Accessi rischiosi non protetti, Autenticazione legacy(mostra il conteggio dell'ultima settimana di autenticazioni legacy con rischio presente nell'organizzazione) e Punteggio di sicurezza dell'identità
+
+Privileged Identity Management (PIM)  è un servizio in Azure Active Directory (Azure AD) che consente di gestire, controllare e monitorare l'accesso a risorse importanti nell'organizzazione. Fornisce l'attivazione dei ruoli basata sul tempo e sull'approvazione per mitigare i rischi di autorizzazioni di accesso eccessive, non necessarie o utilizzate in modo improprio sulle risorse a cui tieni.E' possibile estendere e rinnovare gli incarichi.
+Estendere: quando un'assegnazione di ruolo si avvicina alla scadenza, l'utente può utilizzare Privileged Identity Management per richiedere un'estensione per l'assegnazione di ruolo
+Rinnovare: quando un'assegnazione di ruolo è già scaduta, l'utente può utilizzare Privileged Identity Management per richiedere un rinnovo per l'assegnazione di ruolo
+
+Alcuni scenari sono:
+Permessi di amministratore del ruolo privilegiato
+Autorizzazioni di approvazione
+Autorizzazioni utente per ruolo idoneo
+
+
+Azure Key Vault è un servizio cloud per l'archiviazione e l'accesso ai segreti in modo sicuro. Un segreto è tutto ciò a cui vuoi controllare strettamente l'accesso, come chiavi API, password, certificati o chiavi crittografiche. Il servizio Key Vault supporta due tipi di contenitori: depositi e pool di moduli di sicurezza hardware gestiti (HSM). I Vault supportano l'archiviazione di chiavi, segreti e certificati supportati da software e HSM. I pool HSM gestiti supportano solo chiavi supportate da HSM.
+
+Tenant : è l'organizzazione che possiede e gestisce un'istanza specifica dei servizi cloud Microsoft. È più spesso usato per fare riferimento al set di servizi Azure e Microsoft 365 per un'organizzazione.
+
+Proprietario del Vault: un proprietario del vault può creare un deposito di chiavi e ottenere l'accesso completo e il controllo su di esso. Il proprietario del vault può anche impostare il controllo per registrare chi accede a segreti e chiavi. Gli amministratori possono controllare il ciclo di vita della chiave. Possono passare a una nuova versione della chiave, eseguirne il backup ed eseguire attività correlate.
+
+Consumatore del Vault : un consumatore del Vault può eseguire azioni sulle risorse all'interno del Key Vault quando il proprietario del Vault concede l'accesso al consumer. Le azioni disponibili dipendono dalle autorizzazioni concesse.
+
+Amministratori HSM gestiti : gli utenti a cui è assegnato il ruolo di amministratore hanno il controllo completo su un pool HSM gestito. Possono creare più assegnazioni di ruolo per delegare l'accesso controllato ad altri utenti.
+
+Responsabile/utente crittografia HSM gestito : ruoli predefiniti che vengono generalmente assegnati a utenti o entità servizio che eseguiranno operazioni crittografiche utilizzando chiavi in HSM gestito. L'utente crittografico può creare nuove chiavi, ma non può eliminare le chiavi.
+
+Utente di crittografia del servizio di crittografia HSM gestito : ruolo integrato che viene solitamente assegnato a un'identità del servizio gestito degli account di servizio (ad es. account di archiviazione) per la crittografia dei dati inattivi con la chiave gestita dal cliente.
+
+Una risorsa è un elemento gestibile disponibile tramite Azure. Un gruppo di risorse è un contenitore che contiene risorse correlate per una soluzione di Azure. Il gruppo di risorse può includere tutte le risorse per la soluzione o solo quelle risorse che si desidera gestire come gruppo. Sei tu a decidere come allocare le risorse ai gruppi di risorse, in base a ciò che ha più senso per la tua organizzazione.
+
+Sicurezza principal : Un Azure di sicurezza principale è un'identità di sicurezza che le applicazioni create dagli utenti, servizi e strumenti di automazione utilizzare per accedere a specifiche risorse di Azure. Un'entità di sicurezza dovrebbe solo eseguire operazioni specifiche, a differenza di un'identità utente generale. Migliora la sicurezza se gli si concede solo il livello di autorizzazione minimo necessario per eseguire le sue attività di gestione. Un'entità di sicurezza utilizzata con un'applicazione o un servizio è denominata in modo specifico entità servizio .
+
+Azure Active Directory (Azure AD) : è il servizio Active Directory per un tenant. Ogni directory ha uno o più domini. Ad una directory possono essere associati molti abbonamenti, ma solo un tenant.
+
+ID tenant di Azure : un ID tenant è un modo univoco per identificare un'istanza di Azure AD all'interno di una sottoscrizione di Azure.
+
+Identità gestite : Azure Key Vault offre un modo per archiviare in modo sicuro credenziali e altre chiavi e segreti, ma il codice deve essere autenticato in Key Vault per recuperarli.
+
+Esistono tre modi per autenticarsi su Key Vault:
+
+-Identità gestite per le risorse di Azure : quando si distribuisce un'app in una macchina virtuale in Azure, è possibile assegnare un'identità alla macchina virtuale che ha accesso a Key Vault. È inoltre possibile assegnare identità ad altre risorse di Azure . Il vantaggio di questo approccio è che l'app o il servizio non gestisce la rotazione del primo segreto. Azure ruota automaticamente l'identità.
+-Entità servizio e certificato : è possibile utilizzare un'entità servizio ed un certificato associato che ha accesso a Key Vault. Non è consigliabile questo approccio perché il proprietario o lo sviluppatore dell'applicazione deve ruotare il certificato.
+-Entità servizio e segreto : sebbene sia possibile utilizzare un'entità servizio ed un segreto per l'autenticazione in Key Vault, non è consigliabile. È difficile ruotare automaticamente il segreto di bootstrap utilizzato per l'autenticazione a Key Vault.
+
+Crittografia dei dati in transito:
+
+-Azure Key Vault applica il protocollo Transport Layer Security (TLS) per proteggere i dati durante il viaggio tra Azure Key Vault e i client. I client negoziano una connessione TLS con Azure Key Vault. TLS fornisce autenticazione forte, privacy e integrità dei messaggi, interoperabilità, flessibilità dell'algoritmo e facilità di distribuzione e utilizzo.
+
+-Perfect Forward Secrecy (PFS) protegge le connessioni tra i sistemi client dei clienti e i servizi cloud Microsoft tramite chiavi univoche. Le connessioni utilizzano anche lunghezze di chiave di crittografia a 2.048 bit basate su RSA. Questa combinazione rende difficile per qualcuno intercettare e accedere ai dati in transito.
+
+Azure Security Center:
+Rafforza il livello di sicurezza dei carichi di lavoro cloud
+Protegge i carichi di lavoro multicloud e ibridi dalle minacce
+Proteggi le istanze di Azure Kubernetes Service (AKS)
+Semplifica la gestione della sicurezza
+Connettiti a strumenti e processi esistenti

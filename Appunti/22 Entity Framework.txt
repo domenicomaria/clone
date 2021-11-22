@@ -1,0 +1,16 @@
+Entity Framework ci consente di automatizzare l'accesso ai dati:
+
+1) MIGRAZIONI: recuperando dalle entità inserite in un contesto tutte le info di "tipo" necessarie per creare tale entità nel DB.
+La migrazione si basa su due meccanismi:
+1.1) ADD MIGRATION: la migrazione in sè
+1.2) AGGIORNAMENTO DEL DB (UPDATE): in cui posso indicare una migrazione specifica fino alla quale viene migrato il DB.
+1.3) La verifica viene fatta verso la tabella delle migrazioni già presente nel db. 
+
+Questo processo verte su due tecniche essenziali:
+2.1) Data Annotation (attributi che decorano ogni proprietà, come chiave, max leng, foreign key) e individua i tipi
+2.2) Navigation Properties: aggiungendone di opportune, l'EF individua le relazioni tra le entità e le va a sfruttare.
+     Ci consentono fisicamente di navigare negli oggetti correlati e servono a reidratare i dati.
+
+3) Ci consente inoltre di effettuare tutte le operazioni CRUD sulle entità generando in modo trasparente all'utente
+tutte le query necessarie verso la base dati. 
+3.1) Il vantaggio è di slegarmi dal provider effettivo perchè EF genererà le query nel linguaggio specifico di questo provider. 

@@ -1,0 +1,38 @@
+Azure è una piattaforma di cloud computing di Microsoft. 
+Consente di utilizzare diverse forme di cloud computing:
+
+- una infrastruttura di servizio (IaaS - Infostructure as a service): essa può contenere un certo numero di IP all’interno di reti WAN, PC, Client e Server;
+-  una piattaforma PaaS (Platform as a service), come può essere WordPress.
+- un software SaaS (Software as a service), servizio privo di utilizzo di server.
+
+In particolare WordPress è un esempio di ciò che si definisce un CMS, ossia un Content Management System e basato su stack LAMP(Linux,Apache, MySQL e PHP), che serve per la creazione di siti. Un CMS per la creazione di siti a riferimenti incrociati è Wiki. 
+
+Le risorse possono essere applicativi da avviare su azure(senza conoscere la localizzazione dei server) oppure è possibile usare server già stabiliti oppure creare server secondo le nostre specifiche.
+E' possibile vedere le risorse di azure visualizzabili in base alle categorie o ricercabili tramite la barra di ricerca.
+
+Un Gruppo di Risorse è un container di risorse e può contenere o tutte le risorse o solo la parte che si vuole gestire come gruppo. Ciascun gruppo di risorse va ad archiviare i dati delle risorse che fanno parte di tale gruppo. Le risorse che appartengono allo stesso gruppo possono avere lo stesso ciclo di vita. Si possono configurare dei metodi di accesso per ciascuna risorsa per ciascun utente che ha accesso alla risorsa. 
+
+Una volta che si va a creare un Gruppo di Risorse o anche solo ad utilizzare una risorsa in ambiente Azure bisogna effettuare e specificare la Sottoscrizione, ossia il contratto stipulato (metodo di fatturazione) con in questo caso Microsoft per l’utilizzo di questi software, piattaforme e o infrastrutture. E' possibile creare sottoscrizioni aggiuntive per: creare ambienti distinti per finalità di sicurezza o per isolare i dati per motivi di conformità.
+
+Per creare un nuovo gruppo di risorse in Azure è necessario immettere la sottoscrizione, il gruppo di risorse, l’area geografica. Nel caso della creazione di un database SQL bisogna decidere il tipo di autenticazione da voler effettuare (autenticazione ulteriore SQL, autenticazione Azure, o entrambe), l’accesso alla risorsa (nessuno, pubblico o privato), il tipo di connessione (predefinito o differente) e le regole di confronto da dover seguire. Azure mette a disposizione anche dei DB predefiniti da poter utilizzare come per esempio Adventure works db. Una volta creato il modello c’è la possibilità di scaricare il modello per l’automazione. 
+Tra le caratteristiche importanti affinché si possa parlare di gruppo di risorse, abbiamo le seguenti:
+-	Tutte le risorse del gruppo di risorse devono condividere lo stesso ciclo di vita. Le risorse vengono distribuite, aggiornate ed eliminate insieme.
+-	Ogni risorsa può appartenere a un solo gruppo di risorse.
+-	È possibile aggiungere o rimuovere una risorsa in un gruppo di risorse in qualsiasi momento.
+-	È possibile spostare una risorsa da un gruppo di risorse a un altro. 
+-	Quando si crea un gruppo di risorse è necessario specificarne il percorso.
+-	Una risorsa può connettersi a risorse in altri gruppi di risorse.
+-	Quando si elimina un gruppo di risorse, verranno eliminate anche tutte le risorse presenti nel gruppo.
+
+
+Allocazione fissa o statica, ovvero una volta allocata la memoria, la dimensione della memoria non può cambiare automaticamente ma solo manualmente. 
+
+Allocazione dinamica della memoria, la dimensione della memoria può essere modificata in base a percentuali o a blocchi fissi/soglie. La memoria viene automaticamente allocata sullo stack (record di attivazione) e automaticamente deallocata quando non più necessaria.
+
+Log del database:Ogni database di SQL Server include un log delle transazioni in cui vengono registrate tutte le transazioni e le modifiche apportate dalle transazioni stesse al database. Se si verifica un errore di sistema, è necessario tale registro per ripristinare uno stato coerente del database.
+
+Autentificazione integrata o autentificazione di database: Autenticazione integrata di Windows consente agli utenti di accedere con le proprie credenziali di Windows, utilizzando Kerberos o NTLM. Il client invia le credenziali nell'intestazione dell'autorizzazione. L'autenticazione di Windows è particolarmente adatta per un ambiente Intranet.
+
+Stringa di connessione: Una stringa di connessione contiene informazioni di inizializzazione che vengono passate come parametro da un provider di dati a un'origine dati. Contiene tutti i parametri di accesso che mi consentono di collegarmi come client. SQL connection è classe che uso in C# per connettermi al server.
+
+Partizionamento:a secondo della qualità e del tipo del dato posso decidere se metterlo in dischi più veloci o più lenti.

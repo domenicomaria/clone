@@ -1,0 +1,59 @@
+Azure RBAC (Azure role-based access control) aiuta a gestiregli accessi alle risorse Azure, le azioni che si possono svolgere con quelle risorse ed a quali aree si ha accesso. Questo fornisce una gestione granulare degli accessi alle risorse Azure. 
+
+Ecco alcuni esempi di ciò che si può fare con Azure RBAC:
+- Consentire a un utente di gestire le macchine virtuali in un abbonamento e a un altro utente di gestire le reti virtuali;
+- Consentire a un gruppo DBA di gestire i database SQL in un abbonamento;
+- Consentire a un utente di gestire tutte le risorse in un gruppo di risorse, come macchine virtuali, siti web e subnet;
+- Consentire a un'applicazione di accedere a tutte le risorse in un gruppo di risorse.
+
+Il modo in cui si controlla l'accesso alle risorse utilizzando Azure RBAC è quello di assegnare ruoli Azure. L'assegnazione di un ruolo consiste di tre elementi: principio di sicurezza, definizione del ruolo e ambito. 
+- Un security principal è un oggetto che rappresenta un utente, un gruppo, un service principal o un'identità gestita che richiede l'accesso alle risorse Azure. È possibile assegnare un ruolo a uno qualsiasi di questi principal di sicurezza.
+- Una definizione di ruolo è un insieme di permessi. Di solito è semplicemente chiamato ruolo. Una definizione di ruolo elenca le azioni che possono essere eseguite, come leggere, scrivere e cancellare. I ruoli possono essere di alto livello, come proprietario, o specifici, come lettore di macchine virtuali.
+- L'ambito è l'insieme di risorse a cui si applica l'accesso. Quando si assegna un ruolo, è possibile limitare ulteriormente le azioni consentite definendo un ambito. Questo è utile se si vuole rendere qualcuno un Website Contributor, ma solo per un gruppo di risorse. In Azure, è possibile specificare un ambito a quattro livelli: gruppo di gestione, abbonamento, gruppo di risorse o risorsa. Gli ambiti sono strutturati in una relazione genitore-figlio. È possibile assegnare ruoli a uno qualsiasi di questi livelli di ambito.
+
+Un'assegnazione di ruolo è il processo di allegare una definizione di ruolo a un utente, gruppo, servizio principale o identità gestita in un particolare ambito allo scopo di concedere l'accesso. L'accesso viene concesso creando un'assegnazione di ruolo e l'accesso viene revocato rimuovendo un'assegnazione di ruolo.
+
+
+Tenant: contratto come affittuario. Si ha a propria disposizione tutta l’infrastruttura quindi la si fornisce. Ho a disposizione tutti i dispositivi fisici, macchine, software e licenze. Vado ad utilizzare Azure per mettere a disposizione tutti i comandi az cli che possono usare tutti i workers senza fargli fare operazioni manuali. 
+
+Active Directory: sono directory con oggetti di due tipi, utenti e cartelle. Una volta autenticato in un dominio ho la possibilità o meno di compiere operazioni se e solo se io come utente dovrò avere degli accessi alle operazioni. Il domain controller permette di definire tali accessi. Una volta veniva effettuato in Windows ma adesso viene fatto anche in Cloud alla stessa maniera su Azure. 
+
+In logica aziendali ogni operazione va fatta se possibile sempre con un account con minori privilegi possibili per evitare di incorrere in vulnerabilità. In ciò bisogna capire che una applicazione è come fosse un utente perché sono dei client di un certo servizio e contengono la stringa di connessione. 
+
+Una persona fisica ha normalmente più account di accesso con diversi profili di accesso! 
+
+Chi ha meno accessi e vuole compiere delle operazioni deve richiedere l’accesso a chi può svolgere più operazioni.
+
+L’Owner è un ruolo  di cui possono far parte il service administrator e co-administrator ed è relativo ad una specifica sottoscrizione, a tutti i tipi di risorse, delle quali ha pieno ccesso e di cui può delegarne lo stesso agli altri! 
+Il ruolo di Contributor crea e fa management di tutte le risorse, crea una nuova tenent in Azure e non può fare il grant degli accessi e si applica a tutte le risorse.
+Il Reader vede le risorse tutte.
+Lo User Access Administrator gestisce le risorse Azure, è una specie di sistemista.
+
+Snapshot è una operazione di un VM contributor: una immagine di disco che si fa prima di fare operazioni che potrebbero compromettere alcune funzionalità, per poterlo ripristinare in seguito.
+
+REFERENCE ENTITA' COINVOLTE
+CDN: Content Delivery Network, vengono messi a disposizione tutti i file script sct (es. bootstrap javascript, css). Vado a mettere un riferimento. Possibilità mantenendo uno stesso URI (uniform resource identifier) di partizionare per posizioni geografiche. Mi piacerebbe fare una rete con un cdn, vuol dire che ho un load balancer che mi farà accedere a un server per tutte le richieste di un paese (Italia) piuttosto che un altro. Come? Effettuando una richesta da un IP italiano, o francese, tramite il DNS, viene rediretto a un IP specifico (cdn da un 301 con l'ip corretto). Questo permette di partizionare e gestire meglio le richieste. Elimina problemi di svraccarico e di latenza. 
+
+Le opzioni alternative sarebbero:
+- scarico e lo metto nel server, poi faccio una directory virtuale per renderlo disponibile;
+- lo vado a leggere nel sito di bootstrap.
+
+Quando da cli faccio --role vado a mettere il GUID del role associato (codice accanto alle descrizioni dei ruoli microsoft). 
+
+Cluster: ridondanza software. C’è una macchina superpotente ed è in grado di simulare la presenza di più SO organizzati a grappolo in contemporanea. E’ come un load balancer 3D. Se si rompe un disco per es. dell’ultimo chicco d’uva, tutte le risorse di quel acino e di tutti quelli che condividono la risorsa problematica vengono tagliate, e viene scelto dal grappolo un'altra unità che non utilizza la risorsa problematica con un altro disco che è perfettamente allineato. Ottima soluzione per la disponibilità ed efficacia. 
+
+Ogni ramo VM, networking (CDN, DNS…), storage (clustering, backup, data lake…), WEB, Containers, Databases, Analytics, Blockchain, AI e ML, IoT, Security, DevOps, Governance… ha almeno i ruoli di contributor, reader e owner.
+
+Storage di coda: se devo scrivere dei log su un file ma poi mi viene chiesto di scriverli su un db. La tecnica di storage di coda consiste in scrivere un file in un in-memory db (virtuale, esiste solo su ram), dopodichè un programma effettua una lettura dall’esterno e lo trasferisce nel modo più coerente con quanto richiesto da un utente esterno. Ciò è detto sistema di coda. 
+Questo perché scrive un file vero e proprio può essere un bottleneck nel processo e potrebbe diventare una operazione più lunga dello stesso log. Permettono di mantenere in ordine più richieste anche in presenza di latenze.
+
+Latenze di propagazione: tempo impiegato per la propagazione dei permessi o la variazione di uno stato degli utenti. 
+Guest fa parte di più active directory, le risorse si vedono solo cambiando le directory.
+Possiamo assegnare dei ruoli direttamente all'utente.
+Per cambiare autorizzazione dobbiamo assegnare un nuovo ruolo e cancellare quello precedente.
+Il ruolo è relativo ad azure ma ogni risorsa interna deve essere anch'essa calibrata sennò si rischia di aver dato accesso a delle parti non autorizzate(es. worpdress)
+Creando un gruppo abbiamo una granularità per gruppo così cambiando un autorizzazione cambia per tutti, è preferibile questo livello di granularità in quanto quello per il singolo utente è maggiormente specifico.
+
+I gruppi di sicurezza vengono usati per concedere ai membri del gruppo l'accesso ad applicazioni e risorse e per assegnare le licenze. I membri del gruppo possono essere utenti, dispositivi, entità servizio e altri gruppi.
+
+I gruppi di Microsoft 365 vengono usati per la collaborazione, in modo da fornire ai membri l'accesso a cassette postali, calendario, file, siti di SharePoint condivisi e così via. I membri del gruppo possono essere solo utenti.

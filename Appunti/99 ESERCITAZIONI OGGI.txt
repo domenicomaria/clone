@@ -1,0 +1,2 @@
+lab devops su azure
+containers e kubernetis

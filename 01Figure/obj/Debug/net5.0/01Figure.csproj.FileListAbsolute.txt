@@ -1,0 +1,16 @@
+C:\Corso\20211025DevOpsAzure\01Figure\bin\Debug\net5.0\01Figure.exe
+C:\Corso\20211025DevOpsAzure\01Figure\bin\Debug\net5.0\01Figure.deps.json
+C:\Corso\20211025DevOpsAzure\01Figure\bin\Debug\net5.0\01Figure.runtimeconfig.json
+C:\Corso\20211025DevOpsAzure\01Figure\bin\Debug\net5.0\01Figure.runtimeconfig.dev.json
+C:\Corso\20211025DevOpsAzure\01Figure\bin\Debug\net5.0\01Figure.dll
+C:\Corso\20211025DevOpsAzure\01Figure\bin\Debug\net5.0\ref\01Figure.dll
+C:\Corso\20211025DevOpsAzure\01Figure\bin\Debug\net5.0\01Figure.pdb
+C:\Corso\20211025DevOpsAzure\01Figure\obj\Debug\net5.0\01Figure.csproj.AssemblyReference.cache
+C:\Corso\20211025DevOpsAzure\01Figure\obj\Debug\net5.0\01Figure.GeneratedMSBuildEditorConfig.editorconfig
+C:\Corso\20211025DevOpsAzure\01Figure\obj\Debug\net5.0\01Figure.AssemblyInfoInputs.cache
+C:\Corso\20211025DevOpsAzure\01Figure\obj\Debug\net5.0\01Figure.AssemblyInfo.cs
+C:\Corso\20211025DevOpsAzure\01Figure\obj\Debug\net5.0\01Figure.csproj.CoreCompileInputs.cache
+C:\Corso\20211025DevOpsAzure\01Figure\obj\Debug\net5.0\01Figure.dll
+C:\Corso\20211025DevOpsAzure\01Figure\obj\Debug\net5.0\ref\01Figure.dll
+C:\Corso\20211025DevOpsAzure\01Figure\obj\Debug\net5.0\01Figure.pdb
+C:\Corso\20211025DevOpsAzure\01Figure\obj\Debug\net5.0\01Figure.genruntimeconfig.cache

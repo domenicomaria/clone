@@ -1,0 +1,46 @@
+Log4net: Una volta che un'applicazione è stata distribuita, potrebbe non essere possibile utilizzare gli strumenti di sviluppo e debug. Un amministratore può utilizzare sistemi di registrazione efficaci per diagnosticare e risolvere molti problemi di configurazione.  Offre diversi vantaggi. Fornisce un contesto preciso sull'esecuzione dell'applicazione. Una volta inserita nel codice, la generazione dell'output di registrazione non richiede alcun intervento umano. Inoltre, l'output del registro può essere salvato in un supporto persistente per essere studiato in un secondo momento. Oltre al suo utilizzo nel ciclo di sviluppo, un pacchetto di registrazione sufficientemente ricco può essere visto anche come strumento di controllo.
+
+La registrazione ha i suoi svantaggi. Può rallentare un'applicazione. Se troppo prolisso, può causare la cecità allo scorrimento. Per alleviare queste preoccupazioni, log4net è progettato per essere affidabile, veloce ed estensibile.
+Log4net ha tre componenti principali: logger , appender e layout . Questi tre tipi di componenti lavorano insieme per consentire agli sviluppatori di registrare i messaggi in base al tipo e al livello di messaggio e per controllare in fase di esecuzione come vengono formattati questi messaggi e dove vengono segnalati. Questi componenti sono aiutati da filtri che controllano le azioni dell'appender e dei renderer di oggetti che trasformano gli oggetti in stringhe.
+
+
+LOGGER: Il primo e più importante vantaggio di qualsiasi API di registrazione risiede nella sua capacità di disabilitare determinate istruzioni di registrazione consentendo ad altri di stampare senza impedimenti. Questa funzionalità presuppone che lo spazio del registro, ovvero lo spazio di tutte le possibili istruzioni del registro, sia classificato secondo alcuni criteri scelti dallo sviluppatore. Ai logger possono essere assegnati livelli. I livelli sono istanze della classe log4net.Core.Level . I seguenti livelli sono definiti in ordine di priorità crescente:
+TUTTI
+DEBUG
+INFORMAZIONI
+AVVISARE
+ERRORE
+FATALE
+SPENTO
+
+
+APPENDER: La capacità di abilitare o disabilitare selettivamente le richieste di registrazione in base al loro logger è solo una parte del quadro. Log4net consente di stampare le richieste di registrazione su più destinazioni. In log4net speak, una destinazione di output è chiamata appender . Gli appender devono implementare l' interfaccia log4net.Appenders.IAppender .
+
+Personalizzazione del Layout: ciò si ottiene associando un layout a un appender. Il layout è responsabile della formattazione della richiesta di registrazione secondo i desideri dell'utente, mentre un appender si occupa di inviare l'output formattato alla sua destinazione. Il PatternLayout , parte della distribuzione standard log4net, consente all'utente di specificare il formato di output in base a modelli di conversione simili al linguaggio C printf funzione.
+
+Ad esempio, PatternLayout con il modello di conversione "%timestamp [%thread] %-5level %logger - %message%newline" produrrà qualcosa di simile a:
+176 [ principale ] INFO   Com . Pippo . Bar : si trova la stazione di servizio più vicina . 
+
+
+FILTRI: I filtri possono essere specificati nella configurazione per consentire un controllo preciso degli eventi che vengono registrati tramite appender diversi.
+La forma più semplice di controllo consiste nello specificare una soglia nell'appender. Funziona registrando solo gli eventi che hanno un livello maggiore o uguale alla soglia.
+È possibile eseguire filtri di eventi più complessi e personalizzati utilizzando la catena di filtri definita su ciascun appender. I filtri devono implementare l' interfaccia log4net.Filter.IFilter .  
+
+http://logging.apache.org/log4net/release/manual/introduction.html
+
+
+Possiamo compilare in più ambienti di sviluppo: Development e Release
+1)Development: compila ed esegue in locale (il percorso da associare dal file launch.json è sul file appsettings.Development.json)
+2)Release: esegui l'app con deploy su piattaforma(es.azure) (il percorso da associare dal file launch.json è sul file appsettings.json)
+
+Vantaggi di mandare un progetto in release:
+1)Occupa meno spazio (minifier)
+2) Il codice è oscurato perchè dà dei label casuali
+
+
+Nell'esempio del file ClientiController.cs è stato messo l'if per non eseguire la chiamata a funzione del logger e quindi avere un dispendio minore di carico di lavoro.
+
+
+
+
+

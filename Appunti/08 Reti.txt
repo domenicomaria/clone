@@ -1,0 +1,131 @@
+cosa significa Cpu / Core, 
+Memoria
+Bus, 
+Controller, memoria di massa, periferica
+
+CPU (central processing unit) è la componente di un calcolatore (detta anche processore) che carica le istruzioni dei programmi in memoria, le interpreta e manipola i dati di conseguenza. 
+I componenti minimali di una CPU sono: 
+1. L’unità di controllo che legge ciclicamente l’istruzione successiva da eseguire (come indicato dall’apposito registro), la interpreta e la esegue scrivendo il risultato utilizzando gli appositi registri e cambiando i flag (indicatori FX) di stato del processore (anch’essi memorizzati in un registro). 
+2. L'unità aritmetico-logica (ALU) è una tipologia particolare di processore digitale che si contraddistingue per essere preposta all'esecuzione di:
+	-Operazioni aritmetiche su numeri interi (addizione, sottrazione ma spesso anche moltiplicazione 	e divisione, in alcuni casi svolte tramite l'utilizzo di sottrazioni o somme multiple).
+	-Operazioni logiche (AND, OR, XOR).
+	-Operazioni di scorrimento binarie tramite registri a scorrimento.
+3. I registri sono di due tipi: 
+	-nei primi vengono memorizzate informazioni indispensabili per il corretto funzionamento del 			processore, come l’indirizzo della prossima istruzione da eseguire, flag di stato del processore 	stesso e flag di controllo dell’esecuzione; 
+	-nei secondi vengono memorizzati gli eventuali dati di ingresso per l’operazione da eseguire e i 	risultati della stessa.
+https://www.treccani.it/enciclopedia/cpu/
+https://it.wikipedia.org/wiki/Unit%C3%A0_aritmetica_e_logica
+
+CORE è il centro elaborativo di uno specifico microprocessore all’interno del processore principale con il quale condivide la stessa scheda saldata. Avere più core significa avere più cuori e quindi di essere in grado di gestire una maggiore potenza di calcolo nello stesso lasso temporale.
+https://pcgenius.org/processori-multicore-cosa-significa-vantaggi/
+
+MEMORIA è un elemento di un computer o di un suo sottosistema atto alla persistenza dei dati e\o delle istruzioni dei programmi, la cui implementazione fisica dà vita ai vari supporti di memorizzazione esistenti, come:
+	-la memoria primaria, che lavora a più diretto contatto con il processore, costituita 	fondamentalmente da memoria RAM, memoria ROM, memoria Cache. Vengono utilizzate memorie veloci.
+	-Una memoria di massa (o memoria secondaria) è un tipo di memoria che raccoglie 			tipicamente grandi quantità di dati rispetto alla memoria primaria e in maniera non volatile 	cioè permanente allo spegnimento della macchina, almeno fino alla volontà dell'utente.
+https://it.wikipedia.org/wiki/Memoria_(informatica)
+
+BUS è un canale di comunicazione che permette a periferiche e componenti di un sistema elettronico di interfacciarsi tra loro scambiandosi informazioni o dati di sistema attraverso la trasmissione e la ricezione di segnali. Un solo bus può collegare tra loro più dispositivi. Le connessioni elettriche del bus possono essere realizzate direttamente su circuito stampato oppure tramite un apposito cavo. I bus possono essere di due tipi: seriale( come SATA, PCI Express, USB) oppure parallelo (ISA, PCI e AGP).
+https://it.wikipedia.org/wiki/Bus_(informatica)
+
+CONTROLLER è un dispositivo elettronico di un computer, dedicato a gestire e a far accedere al bus una o più unità periferiche; possiede una propria memoria interna e una serie di registri specializzati. 
+
+PERIFERICA indica un qualsiasi dispositivo hardware che fa parte di un sistema informatico e/o di elaborazione elettronico e che funziona sotto il controllo di una unità centrale e del sistema operativo, alla quale è collegata. Ogni periferica può essere di ingresso, di uscita o ausiliaria al funzionamento interno.
+https://it.wikipedia.org/wiki/Periferica
+
+Esistono vari protocolli di comunicazione tra il controller e la periferica, i più utilizzati sono l'EIDE, lo SCSI e il SATA.
+
+Client: è un hardware o un software che, tramite una rete, 
+interroga un server per accedere ai servizi che vengono forniti da quest’ultimo. 
+
+Server: in maniera speculare un server fornisce i dati che vengono richiesti da un client, mediante i protocolli di rete.  
+
+Un computer può essere sia Client che Server, tra due c'è una relazione client server, quando un computer, detto client,
+interroga un altro computer detto server, fornendogli dati o servizi. I due software/ hardware possono avere una relazione client-server
+si dice che il componente A è client di B e il componente B serve A,C,Z,Q,K...
+
+RETE INFORMATICA: Una rete informatica, è costituita da un insieme di dispositivi hardware e software collegati l’un l’altro che, attraverso appositi canali di comunicazione, permettono di scambiarsi risorse, dati o informazioni. A seconda della posizione geografica avremo differenti reti informatiche, si parlerà infatti di LAN (Local Area Network), MAN (Metropolitan Area Network), o WAN (Wide Area Network). I seguenti dispositivi rivestono un ruolo importante nell’implementazione della rete informatica:
+
+NIC (Network Interface Card): serve a collegare un dispositivo alla rete, è un hardware e può essere sia interno che esterno. 
+SWITCH: serve a direzionare i dati veicolandone il traffico in modo bidirezionale tra più dispositivi collegati tra loro. 
+ROUTER: serve a gestire i pacchetti di dati in arrivo o in uscita da uno o più nodi della rete informatica.
+HUB: è un dispositivo che collega più utenti tra loro, facendo in modo che ogni pacchetto di dati proveniente da un computer venga ricevuto dall’hub su una porta e trasmesso a tutte le altre. Ognuno degli utenti che si collega ad uno stesso hub, si dice che appartiene allo stesso “segmento”. 
+
+https://www.quora.com/What-are-the-functions-of-NIC-hub-router-and-switch
+
+
+Per approfondimenti:
+
+https://www.zerounoweb.it/techtarget/searchdatacenter/configurazione-di-rete-e-significato-dello-switch-tecnologia-storia-e-vantaggi/
+
+https://www.ibm.com/it-it/cloud/learn/networking-a-complete-guide
+
+
+
+Sottorete: è una parte di una singola rete IP (Internet Protocol). La differenza tra una rete e una sottorete sta nel tipo di configurazione di rete che si dà al proprio computer. La subnetting è la divisione di una singola rete in gruppi di computer che hanno in comune, in ciascun indirizzo IP un determinato prefisso di routing. Si organizza dunque la rete in modo efficiente, dividendola in intervalli. Il processo di subnetting porta alla separazione dell'indirizzo IP in una parte che indica la rete e una parte che indica l'host. Questo viene eseguito tramite un AND binario tra l'indirizzo IP e la maschera di sottorete. Il risultato di tale operazione è l'identificatore di rete. In sostanza l’indirizzo IP non viene visualizzato nella sua interezza,  ma una parte, viene mascherata da una serie di 1, lasciando visibile solamente l’ottetto che costituisce l’identificativo. 
+
+IPv4 sta per Internet Protocol Version 4. Si tratta di un metodo con cui i dati saranno inviati da un dispositivo informatico ad un altro attraverso Internet. È formato da 4 ottetti, separati da un punto. È possibile generare con questo protocollo circa 4 miliardi di indirizzi IP, è per questo che, non essendo tale quantità sufficiente al giorno d’oggi, è stata introdotta una versione del protocollo denominata IPV6. L'IPv4 utilizza uno schema di indirizzi a 32 bit. Questa versione di IP è utilizzata come base di Internet e stabilisce tutte le regole e i regolamenti per le reti informatiche che funzionano secondo il principio dello scambio di pacchetti. Il fine di questo protocollo è quello di stabilire connessioni tra dispositivi informatici, server e dispositivi mobili basati  su indirizzi IP.
+
+https://www.speedcheck.org/it/wiki/ipv4/
+
+IPv6 sta per “Internet Protocol Version 6”, ed è una versione molto più estesa dell’IPv4 e dispone di un numero di indirizzi molto grande IP 128 bit. Questo permetterebbe dunque una comunicazione end-to-end a tutti i dispositivi, rendendo superfluo l’uso di IP privati, e consentendo anche alle aziende di gestire 
+comunicazioni bidirezionali senza dover impostare delle regole specifiche nel router. In più, l’IPv6 potrà supportare il continuo progresso dell’Internet of Things  (IoT) e la diffusione di intelligenza artificiale anche a dispositivi di uso pubblico o comune, in modo tale da favorire la digitalizzazione dei servizi e aumentarne 
+autonomia ed efficienza. A differenza dell’IPV4 è un codice alfanumerico, la combinazione tra cifre e lettere può produrre un numero maggiore di indirizzi IP, rispetto al precedente protocollo, questi possono raggiungere la cifra di circa 340 miliardi.
+
+https://www.telemar.it/it/notizie/protocollo-ipv6-cos-e-a-cosa-serve-e-perche-e-il-nostro-futuro
+
+
+
+Sistema operativo e relazione con Bios e UEFI.
+BIOS (Basic Input Output System) sta tra l’hardware e il sistema operativo. E’ la prima cosa che si “carica” all’avvio del PC e il suo scopo è di testare l’hardware e avviare il sistema operativo. Dopo aver effettuato il POST(ovvero una serie di comandi scritti nella ROM della scheda madre), viene letto l’MBR(master boot record) che a sua volta avvierà il bootloader presente in una determinata partizione che a sua volta avvierà il sistema operativo. 
+Vista l'anzianità e le limitazioni del bios(supporta dischi sino a 2 TB e con 4 partizioni) è stato studiato l’UEFI. UEFI (Unified Extensible Firmware Interface) ha sostituito il BIOS in tutti gli ultimi PC e permette di utilizzare dischi ben oltre i 2 TB e utilizza GPT (GUID Partition Table) che rappresenta l'evoluzione del MBR.
+https://www.infomain.net/site/differenze-tra-bios-e-uefi/
+
+SISTEMA OPERATIVO è un software di base che gestisce le risorse hardware e software della macchina, fornendo servizi di base ai software applicativi. E' un insieme di funzioni e strutture dati responsabile:
+	-del controllo e della gestione delle risorse di sistema (CPU e Memoria primaria) e delle 	componenti hardware che costituiscono il computer (processi di Input/Output da e verso le periferiche collegate al sistema)
+	-dell'esecuzione dei programmi (processi) che su di esso vengono eseguiti, assegnando ad essi le 	necessarie risorse per l'avanzamento dei processi.
+	-gestire l'archiviazione e l'accesso ai file. La componente del SO che si occupa di questo si 			chiama file system.
+https://it.wikipedia.org/wiki/Sistema_operativo
+
+LAN: Local Area Network (rete locale) dove i pacchetti vengono gestiti da hub e switch. La massima distanza di trasferimento pacchetti via cavo ethernet è di 100 metri, mentre la connessione wireless 2.4 GHz arriva fino a 91 metri in aria aperta e 45 metri nei luoghi chiusi. Di conseguenza, si rende necessario l'utilizzo di switch per l'amplificazione dei segnali. La velocità di trasmissione dei pacchetti è più alta rispetto a MAN e WAN, pari fino a 100 Mb/s. 
+MAN: Metropolitan Area Network, è una rete che si estende fino a poche decine di kilometri di ampiezza. Un es. è Fastweb con l'utilizzo di cabine.
+WAN: Wide Area Network, collega nodi anche a grandi distanze tra loro. Tale rete implica l'utilizzo di ISP (Internet Service Provider) per le richieste ai Server. Introduce delle latenze maggiori nelle comunicazioni. Prevede un sistema di gestione traffico e di Indirizzi IP. La velocità di trasmissione dei pacchetti è più bassa, al di sotto dei 10 Mb/s. 
+
+Mentre una rete LAN ammette un solo percorso per la comunicazione di pacchetti tra un Client e un Server, una rete WAN prevede più possibilità di percorrimento rappresentando una infrastruttura più complessa.
+https://www.rigacci.org/docs/biblio/online/inet/extra/LANWAN.HTM
+
+Protocolli di rete , TCP / IP ed UDP / IP.
+Il protocollo di rete TCP / IP include una serie di protocolli al suo interno su tre livelli: 
+- Livello applicativo al quale fanno parte HTTP, DNS, DHCP e FTP.
+- Livello di Trasporto: TCP, UDP.
+- Livello Internet: IP (Internet Protocol).
+
+Sul Livello applicativo, il DHCP serve per l'allocazione dinamica degli indirizzi IP. Può avvenire sia sul Server sia sul router di casa. Un computer può funzionare anche da DHCP. 
+https://www.2d2web.com/cos-e-il-dhcp/
+
+Per quanto riguarda il DNS, acronimo di Domain Name System, opera la conversione da nome ad indirizzo IP in quella che è chiamata "risoluzione DNS". La conversione da Indirizzo IP a nome è la "risoluzione inversa". 
+https://it.wikipedia.org/wiki/Domain_Name_System
+
+Sul Livello di Trasporto abbiamo il TCP che riguarda il trasferimento di pacchetti con ritrasmissione dell'effetiva consegna del messaggio. Viceversa, il protocollo UDP si occupa anch'esso del trasferimento, senza avere la possiblità di ritrasmissione circa la corretta consegna del messaggio.
+
+Sul Livello IP (Internet Protocol) abbiamo il protocollo IP per la comunicazione tra due host relativamente a qualsiasi contenuto dei pacchetti. 
+
+Load Balancing: è un procedimento in cui il sovraccarico di richiesta da parte dei Client su un Server viene affrontato con l'implementazione di ulteriori Server connessi tutti al Server di facciata che istanzia le richieste dei Client a un Server più libero e che inoltra un codice di sessione a tale Server per il riconoscimento della richiesta. 
+
+Monitoring (Protocolli / SNMP)
+Sniffing: consiste in attività di intercettazione dei dati che vengono trasmessi su una rete attraverso l'utilizzo di software che vengono detti sniffer. Gli sniffer registrano tutto ciò che incontrano, inclusi i nomi utente e le password non criptate, pertanto possono essere sfruttati dagli hacker (Man in the middle) per accedere a qualsiasi account. Lo sniffing inteso come attacco o intrusione si distingue in: attivo quando l'intruso accede alla rete come se ne facesse parte (un tipo di attacco attivo è lo spoofing in cui l'intruso assume l'indirizzo IP di un utente della rete) e passivo quando si intercettano i dati transitanti sulla rete e ciò può avvenire per scopi di monitoraggio consentiti o fraudolenti. 
+
+SNMP: rappresenta un ulteriore livello che è quello di Diagnostica. SNMP sta per Simple Network Management Protocol ed è utilizzato per la gestione e il monitoraggio degli elementi di rete. Tale protocollo si costituisce di un Manager, dei Dispositivi di rete e degli Agenti.
+Il Manager ha i compiti di interrogare gli agenti e ottenerne risposta e riconoscere gli eventi anomali provenienti dagli agenti. Ciascun dispositivo di rete ha un proprio Agente. I compiti fondamentali per un Agente sono quelli di raccogliere informazioni di gestione relativamente all'ambiente locale (dispositivo), archiviare in un DB chiamato MIB (management Information base) i dati che va a rilevare, ed avvertire il Manager degli eventi anomali. 
+https://www.manageengine.com/it/network-monitoring/what-is-snmp.html
+
+
+
+https://it.wikipedia.org/wiki/Sottorete
+
+https://www.toniolo.edu.it/moodle30/pluginfile.php/173/mod_resource/content/1/calcolare_sottoreti.pdf
+
+
+
+
+
+

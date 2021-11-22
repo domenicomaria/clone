@@ -1,0 +1,36 @@
+TEMATICHE RELATIVE AL DOMAIN CONTROLLER
+
+DOMINIO WINDOWS
+Un dominio Windows è una rete di computer controllati e utilizzati in un contesto aziendale. Vi è almeno un server, chiamato controller di dominio, responsabile degli altri dispositivi. Ciò consente agli amministratori di rete (di solito il personale IT) di controllare i computer nel dominio tramite utenti, impostazioni e altro. Per verificare se il computer fa parte di un dominio, basta aprire il Pannello di controllo e fare clic sulla voce Sistema e sotto la sezione del nome del computer, se viene visualizzata la voce “gruppo di lavoro” con WORKGROUP (impostazione predefinita), il computer non si trova in un dominio.  Il più grande vantaggio dei domini è la facilità di controllare molti computer contemporaneamente. Senza un dominio, il personale IT dovrebbe gestire individualmente ogni computer in un'azienda. Ciò significa configurare le impostazioni di sicurezza, installare software e gestire gli account utente a mano. Questo approccio nel lungo periodo potrebbe risultare ingestibile. Utilizzando il Domain Controller, gli amministratori possono invece configurare tutti i tipi di criteri di sicurezza e utilizzo per tutti i computer che appartengono al dominio stesso. 
+
+fonte: https://it.tipsandtrics.com/what-is-windows-domain-753183
+
+BASTION HOST 
+Un bastion host viene utilizzato per proteggere i dati sensibili o privati e le reti interne. È costituito da uno o più computer, a seconda delle dimensioni del sistema e della complessità dei protocolli di sicurezza. Sono progettati e configurati specificamente per proteggere la rete di computer dall’esposizione ad attacchi o altre violazioni della sicurezza, dall’esterno. Per svolgere al meglio tale ruolo, deve avere un certo livello di accesso da reti esterne ma, allo stesso tempo, questi accessi lo rendono particolarmente vulnerabile. Per ridurne al minimo la vulnerabilità, viene effettuato un rafforzamento in modo da limitare le possibili modalità di attacco. Un amministratore di rete può ad esempio rimuovere o disabilitare gli account utente non necessari, bloccare gli account root o amministratore, chiudere le porte che non vengono utilizzate e configurare la registrazione per includere la crittografia quando si accede al server. I bastion host vengono utilizzati per servizi quali hub di posta, hosting di siti Web, server FTP (file transfer protocol) e gateway firewall. Un amministratore di rete potrebbe anche utilizzare questo tipo di host come server proxy, server VPN (Virtual Private Network) o server System (DNS) del nome di dominio.
+
+fonte: https://spiegato.com/cose-un-bastion-host
+
+Come aggiungere un disco ad una VM:
+https://docs.microsoft.com/it-it/azure/virtual-machines/windows/attach-managed-disk-portal
+Una volta aggiunto il disco dal portale Azure lo abbiamo inizializzato in Disk Management da Accesso Remoto. 
+
+E’ stato eseguito poi lo script via CLI https://docs.microsoft.com/it-it/windows-server/identity/ad-ds/deploy/virtual-dc/adds-on-azure-vm per installare un Active Directory Domain e una Active Directory forest con all’interno due VM Windows ed una Rete Virtuale per collegarle tra loro privatamente. (X)
+
+E’ stata eseguita l’aggiunta di utenti locali al Dominio:
+https://docs.microsoft.com/en-us/troubleshoot/windows-server/identity/create-an-active-directory-server
+E’ stato visto come accedere agli account antecedendo nelle credenziali di accesso allo username il nome del dominio (Dominio\user oppure User@Dominio). 
+
+Procedura per creazione account:
+https://www.emanuelegenovese.it/utente-di-dominio-amministratore-locale-su-tutti-i-computer/
+
+Gruppi di sicurezza di Active Directory:
+https://docs.microsoft.com/it-it/windows/security/identity-protection/access-control/active-directory-security-groups
+E’ possibile distinguere due tipi di gruppi in Active Directory: gruppi di distribuzione e gruppi di sicurezza. A loro volta ogni gruppo è caratterizzato da un ambito che identifica la misura in cui il gruppo viene applicato nell’albero di dominio o nella foresta. Abbiamo tre ambiti di gruppo:
+- Universale
+- Globale
+- Locale
+Esistono dei gruppi di sicurezza già predefiniti di Active Directory, alcuni dei quali sono Amministratore, Guest ed Utenti. ( gli altri si trovano nel link sopra). 
+
+
+E’ stata creata una terza VM per collegarla al dominio precedentemente creato come macchina client:
+ https://docs.microsoft.com/it-it/azure/active-directory-domain-services/join-windows-vm

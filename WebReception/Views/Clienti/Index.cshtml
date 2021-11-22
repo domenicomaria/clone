@@ -1,0 +1,31 @@
+@model List<Reception.Cliente>
+
+@{
+  ViewData["Title"] = "Clienti";
+}
+
+<table class="table table-dark">
+
+  <tr>
+    <th>Id</th>
+    <th>Nome</th>
+    <th>Cognome</th>
+    <th>Telefono</th>
+    <th>Email</th>
+  </tr>
+
+
+  @foreach (Reception.Cliente c in Model)
+  {
+
+    <tr>
+      <td>@c.Id</td>
+      <td>@c.Nome</td>
+      <td>@c.Cognome</td>
+      <td>@c.Email</td>
+      <td>@c.Telefono</td>
+    </tr>
+
+  }
+
+</table>

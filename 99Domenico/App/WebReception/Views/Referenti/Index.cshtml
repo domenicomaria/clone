@@ -1,0 +1,30 @@
+@model List<Reception.Referente>
+
+@{
+  ViewData["Title"] = "Referenti";
+}
+<table>
+
+  <tr>
+    <th>Id</th>
+    <th>Nome</th>
+    <th>Cognome</th>
+    <th>Telefono</th>
+    <th>Email</th>
+  </tr>
+
+
+  @foreach (Reception.Referente r in Model)
+  {
+
+    <tr>
+      <td>@r.Id</td>
+      <td>@r.Nome</td>
+      <td>@r.Cognome</td>
+      <td>@r.Email</td>
+      <td>@r.Telefono</td>
+    </tr>
+
+  }
+
+</table>

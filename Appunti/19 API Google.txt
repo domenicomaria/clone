@@ -1,0 +1,10 @@
+Istruzioni per usare API di Google
+1)Andare sul sito https://developers.google.com/ e accedere con il proprio account
+2) Iscriversi come sviluppatore
+3) Account fatturazione
+4)Creare progetto
+5)Associare un progetto all'account di fatturazione
+6)Estrarre dal progetto un API key e cx e collergarle a delle API
+
+Sito possibile di riferimento:
+https://www.appuntisoftware.it/otteniamo-la-nuova-google-maps-api-key-per-le-nostre-mappe/

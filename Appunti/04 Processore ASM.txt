@@ -1,0 +1,108 @@
+OPERATORI BINARI
+Operatore binario: operatore logico che agisce su due argomenti.
+Operazione binaria: operazione il cui risultato viene interpretato con soli due elementi (nel nostro caso 1 e 0). 
+Es: 2 = 1 0; 3 = 1 1.
+L'AND logico è vero se entrambe le proposizioni legate dalla E sono vere.
+Esempio: mi chiamo Daniele (vero) E mi chiamo Marco (falso).
+vero E falso = falso
+ 
+L'OR logico è vero se almeno una delle proposizioni è vera
+Esempio: sta piovendo o sta nevicando.
+falso o vero = vero
+
+AND (binario)
+
+1 and 1 = 1
+1 and 0 = 0
+0 and 1 = 0
+0 and 0 = 0
+
+OR (binario)
+ 1 or 1 = 1
+ 1 or 0 = 1
+ 0 or 1 = 1
+ 0 or 0 = 0
+ 
+ XOR (binario) -> vale 1 se i membri sono diversi.
+1 XOR 1 = 0
+1 XOR 0 = 1
+0 XOR 1 = 1
+0 XOR 0 = 0
+
+NOT (unario)
+Not 1 = 0
+Not 0 = 1
+ 
+ Shift (scorrimento): movimento di valori in aree della memoria (verso sinistra).
+ Lo shift può avvenire sia verso destra che verso sinistra. A sinistra ci sono i bit più pesanti, mentre a destra quelli che valgono di meno.
+ Esempi:
+  __CIAO__>>2 = 00__CIAO
+
+  001001 << 2 = 100100
+
+
+FUNZIONAMENTO INTERNO DEL PROCESSORE
+
+Registri: aree di memoria fisse. Sono registri AX, BX, CX, IP (instruction pointer), .....
+Registro IP: contiene sempre l'indirizzo della corrente op. che si sta eseguendo. Il programma può dire di saltare ad un altro indirizzo tramite JUMP.
+
+OSS: cosa fa il mov? 
+Mov è una operazione elementare del linguaggio macchina ossia l'Assembler, linguaggio con cui il Calcolatore svolge le sue funzioni elementari.
+mov $0,AX // copia il valore in memoria della cella 0 nel registro AX.
+
+Esempio commentato:
+// Non so cosa c'è dentro al registro A.
+mov 1,AX
+// So che sicuramente dentro al registro A c'è il valore 1.
+
+Esempio commentato:
+// Non so cosa c'è dentro al registro A e nemmeno in B.
+mov 1,AX
+// So che sicuramente dentro al registro A c'è il valore 1.
+mov AX,BX
+// So che sicuramente dentro al registro B c'è il valore che è anche nel registro A.
+
+Esempio:
+Dati
+mov AF,AX
+mov AX<<2,BX
+
+Cosa c'è in BX?
+Si è convertito AF in decimale e binario. L'operazione di shift viene eseguita in binario.
+AF = 00101111
+BX = 10111100
+
+Il primo bit contiene il segno del valore numerico: 0 se positivo, 1 se negativo.
+
+Es. AND:
+
+00010100 & 
+10000000
+----------
+00000000
+
+10010100 & 
+10000000
+----------
+10000000
+
+11 & 01 = 01
+01 & 10 = 00
+Facendo l'AND tra una qualsiasi sequenza di 0 ed 1 ed una contenente segno 1 otteniamo una sequenza con tutti 0 salvo il primo valore che indica proprio il segno.
+ 
+Es. OR:
+00010100 |
+10000000
+----------
+10010100
+
+
+BUS :consente al processore di leggere aree di memoria.
+MEMORIA: una area divisa in celle (da 64 bits) contigue. Con un indirizzo numerico posso accedere alla singola cella.
+
+0 - _|_|_|_|_|_|_|_|_|0|1|_|_|_|_|_|_|
+1 - _|_|_|_|_|_|_|_|_|0|0|0|0|0|0|_|_|
+2 - .... 
+3 - ....
+
+N - _|_|_|_|_|_|_|_|_|0|0|0|0|0|0|_|_|

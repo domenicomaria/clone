@@ -1,0 +1,29 @@
+
+
+HTML nasce prima di XML ma è un caso particolare da cui si è poi derivato il più generale XML.
+Su Htlm per lo style prima si fa riferimento al file CSS, poi al contento di <Head></Head> e poi si fa riferimento a quanto specificato nel file con la specifica tabella ad esempio.
+
+Struttura HTML:
+<TAG di apertura></TAG di chiusura>
+elemento è un oggetto
+i campi sono gli attributi
+
+
+Il CSS (sigla di Cascading Style Sheets, in italiano fogli di stile a cascata), in informatica, è un linguaggio usato per definire la formattazione di documenti HTML, XHTML e XML, ad esempio i siti web e relative pagine web. L'introduzione del CSS si è resa necessaria per separare i contenuti delle pagine HTML dalla loro formattazione o layout e permettere una programmazione più chiara e facile da utilizzare, sia per gli autori delle pagine stesse sia per gli utenti, garantendo contemporaneamente anche il riutilizzo di codice ed una sua più facile manutenzione.
+
+I SELETTORI sono molto importanti per un foglio di stile Css in quanto permettono di identificare in maniera precisa e assoluta a quale elemento della pagina ci si sta riferendo e quindi a quale elemento verrà applicato lo stile da noi elaborato.
+Abbiamo tre tipi di selettori e sono:
+- selettori di elemento
+- selettori di classe
+- selettori di id
+
+I SELETTORI DI ELEMENTO o di tipo vengono identificati con i tag corrispondenti, come ad esempio il tag <p> (paragrafo), per identificarlo come selettore lo si inserisce nel tag style scrivendo semplicemente p. In questa maniera vado ad identificare tutti ma proprio tutti gli elementi con il tag p all'interno della pagina. Perciò, se modifico lo stile del paragrafo con il selettore di elemento p modifico lo stile di tutti i paragrafi presenti nella pagina.
+
+I SELETTORI DI CLASSE servono per poter identificare un gruppo di elementi anche di tipo differente che voglio che abbiano uno stile comune. Ad esempio possono essere dei div, delle intestazioni o dei paragrafi che voglio che abbiano degli stili comuni, ma, ad esempio, non voglio che tutti i paragrafi abbiano lo stesso stile, ma solo alcuni di essi.
+
+I SELETTORI ID selezionano un elemento html, in pratica individuano, identificano un elemento unico che avrà uno stile tutto suo. Soltanto quell'elemento avrà quel particolare id. Quindi un selettore id è un codice identificativo (un marcatore, un'etichetta) che noi assegnamo a qualsiasi elemento della nostra pagina web e a qualsiasi tag.
+Sintatticamente <div id="due"> per poi essere richiamato con un asterisco, in questa maniera: #due, in un tag style per avere la possibilità di modificarne l'aspetto estetico.
+
+
+BOOTSTRAP permette di utilizzare una raccolta di strumenti per creare siti e applicazioni per il web. All’interno di esso sono racchiusi modelli di progettazione basati sulla relazione tra HTML e CSS, utili per tipografia, componenti dell’interfaccia, pulsanti e molto altro ancora.
+https://getbootstrap.com/docs/4.0/content/tables/

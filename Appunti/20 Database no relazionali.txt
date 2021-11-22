@@ -1,0 +1,25 @@
+DB NoSQL
+
+I database NoSQL sono appositamente realizzati per modelli di dati specifici e hanno schemi flessibili. Si sono affermati per la facilità di sviluppo, la funzionalità e la scalabilità delle prestazioni. Non sono tabulari e memorizzano i dati in modo diverso rispetto alle tabelle relazionali. Sono disponibili in una varietà di tipologie in base al loro modello di dati e forniscono schemi flessibili e facilmente scalabili con grandi quantità di dati e carichi elevati degli utenti. Un equivoco comune è che i database NoSQL o i database non relazionali non memorizzano bene i dati delle relazioni. I database non SQL possono memorizzare i dati di relazione, è solo che li memorizzano in modo diverso rispetto ai database relazionali. Infatti, rispetto ai database SQL, molti trovano la modellazione dei dati di relazione nei database NoSQL più semplice rispetto ai database SQL, perché i dati correlati non devono essere suddivisi tra tabelle. database NoSQL sono emersi alla fine degli anni 2000, poiché il costo di archiviazione è drasticamente diminuito. I tipi di DB NoSQL sono i seguenti:
+
+- I database documentali: memorizzano i dati in documenti simili agli oggetti JSON Ciascun documento contiene coppie di campi e valori.
+
+- Gli archivi wide-column: memorizzano i dati in tabelle, righe e colonne dinamiche. offrono molta flessibilità rispetto ai database relazionali, poiché non è necessaria ogni riga per avere le stesse colonne. 
+
+- Database grafici: archiviano i dati in nodi e bordi. I nodi in genere archiviano informazioni su persone, luoghi e cose mentre i bordi archiviano informazioni sulle relazioni tra i nodi.
+
+
+Vantaggi:
+-Flessibilità: offrono schemi flessibili che consentono uno sviluppo più veloce e iterativo. Soluzione ideale per i dati semi-strutturati e non strutturati.
+-Scalabilità: sono progettati per il dimensionamento orizzontalmente, attuato usando cluster distribuiti di hardware, invece del dimensionamento verticalmente, che avviene aggiungendo server costosi e di grosse dimensioni.
+-Elevate prestazioni: sono ottimizzati per modelli di dati specifici e schemi di accesso che consentono prestazioni più elevate rispetto ai risultati che si ottengono cercando di raggiungere una funzionalità simile con i database relazionali.
+-Altamente funzionali: offrono API altamente funzionali e tipi di dati che sono dedicati a ciascuno dei rispettivi modelli di dati.
+Uno dei più famosi è:
+MongoDB: è un DBMS non relazionale, orientato ai documenti. Non è presente ne un controllo integrità nè una struttura fissa. Si allontana dalla struttura tradizionale basata su tabelle dei database relazionali in favore di documenti in stile JSON con schema dinamico (MongoDB chiama il formato BSON).
+Caratteristiche principali:
+-scalabilità in dimensione
+-velocità nell'accesso al dato ma più lento nella scrittura a causa/grazie alle repliche Master e Slave che vanno copiando le informazioni come se fossero dei nodi tutti uguali
+-Risparmio di spazio in quanto essendo un testo la compressione aiuta nel processo.
+
+https://www.mongodb.com/
+

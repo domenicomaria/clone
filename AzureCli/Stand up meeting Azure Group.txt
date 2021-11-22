@@ -1,0 +1,14 @@
+STAND UP MEETING 17/11/2021 AZURE GROUP
+
+back log    |  progress    |   testing    |  chiuso
+---------------------------------------------------------------
+item 1 Domain Controller seconda vm 25 min
+
+              item 2 Approfondimento tematiche relative al dominio 25 min
+
+                                          item 3 Aggiunta nuovo utente al dominio 15 min
+
+              item 4 Aggiunta vm al dominio 40 min
+
+item 5 aggiunta nuovo utente e verifica se è anche amministratore dell'ultima risorsa 
+       aggiunta al dominio, comprensivo di formazione su come fare 50 min

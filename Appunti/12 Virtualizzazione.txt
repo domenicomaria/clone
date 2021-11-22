@@ -1,0 +1,41 @@
+Hardware virtualization: bare-metal and host-os hypervisor:
+Bare-metal anche detto di Tipo 1 consiste in un software per la virtualizzazione che viene installato e funziona direttamente sull'hardware dell'host.
+Un hypervisor è un software che crea ed esegue macchine virtuali (VM). Isola il sistema operativo e le risorse dell'hypervisor dalle macchine virtuali, consentendo la creazione e la gestione di queste ultime.
+Gli Hypervisor di tipo Bare-metal garantiscono un migliore livello di efficienza e di stabilità rispetto a quelli di tipo Client detti di Tipo 2, in quanto hanno la gestione diretta delle risorse di calcolo senza dover passare da altri software o sistemi operativi.
+
+Virtualization of servers:
+La virtualizzazione del server è il processo che consente di suddividere un server fisico in più server virtuali univoci e isolati per mezzo di un'applicazione software. Ogni server virtuale può eseguire i propri sistemi operativi in modo indipendente.
+
+Virtualization of desktop:La virtualizzazione del desktop è un metodo per simulare una workstation dell'utente in modo che sia accessibile da un dispositivo connesso in remoto. Attraverso l'astrazione del desktop dell'utente, le organizzazioni possono così consentire agli utenti di lavorare praticamente ovunque con una connessione di rete, utilizzando qualsiasi tipo di laptop, desktop, tablet o smartphone per accedere alle risorse aziendali indipendentemente dal dispositivo o dal sistema operativo utilizzato dall'utente remoto.
+
+Virtualization of disks (storage):La virtualizzazione dello storage basata su host è quella per cui un host di virtualizzazione offre lo storage necessario alla gestione di un sistema operativo. Un esempio di virtualizzazione basata su host è quella in cui si ha un disco rigido virtuale che si espande in maniera dinamica.
+
+Introduction to Cloud services (IaaS, PaaS, SaaS)
+Infrastruttura come servizio (IaaS): Con Infrastructure as a Service (IaaS), un provider di servizi cloud possiede e gestisce l'hardware su cui viene eseguito il tuo stack software. Ciò include server, rete e archiviazione. Questa può essere un'ottima strategia di riduzione dei costi se si desidera evitare l'acquisto e la manutenzione dell'infrastruttura.
+
+Piattaforma come servizio (PaaS)
+Platform as a Service (PaaS). PaaS è simile a IaaS, tranne per il fatto che il tuo provider di servizi cloud fornisce anche il sistema operativo e i database. Ciò significa meno lavoro per il tuo team IT. La tua organizzazione è ancora responsabile di applicazioni, funzioni e dati. PaaS offre ai tuoi sviluppatori una piattaforma semplice e scalabile per la creazione di applicazioni.
+
+Software as a Service (SaaS)
+Software come servizio (SaaS): offre il maggior supporto ed è il più semplice di tutti i modelli di consegna per l'utente finale. È probabile che lo usi già nella tua organizzazione.
+
+
+CONCETTI CHIAVE:
+
+Availability: La disponibilità di un sistema rappresenta, in ambito informatico, la quantità di tempo che il suddetto rimane online, rispetto al tempo totale giornaliero. 
+
+Reliability: (affidabilità) la capacità di rispettare le specifiche tecniche di funzionamento nel tempo, di un sistema più o meno complesso.  L'affidabilità di un sistema complesso o di un semplice componente è la misura della probabilità che il sistema (o il componente) considerato non si guasti in un determinato lasso di tempo.
+
+Scalability: la scalabilità denota la capacità di un sistema di aumentare o diminuire di scala in funzione delle necessità e disponibilità. Un sistema che gode di questa proprietà viene detto scalabile, cioè in grado di aumentare le sue prestazioni, se a tale sistema vengono fornite nuove risorse. Quanto un determinato sistema sia scalabile dipende dalla sua architettura software e/o architettura hardware
+
+Flexibility: (flessibilità) La capacità intrinseca di un sistema (o sottosistema o componente) di reagire e d'adattarsi al mutamento delle condizioni esterne
+
+LIVELLI DI VIRTUALIZZAZIONE:
+
+1) La virtualizzazione dello storage basata su HOST è quella per cui un host di virtualizzazione offre lo storage necessario alla gestione di un sistema operativo. Un esempio di virtualizzazione basata su host è quella in cui si ha un disco rigido virtuale che si espande in maniera dinamica. Infatti, è piuttosto raro per una macchina virtuale assumere la proprietà di un disco rigido fisico (HDD). Normalmente, una virtual machine sfrutta un disco rigido virtuale che è rappresentato da un unico file, ma l’host alla virtual machine (VM) lo propone in tutto e per tutto come fosse un disco rigido.
+
+2) La virtualizzazione dello storage basata su ARRAY sfrutta il cosiddetto storage tiering, ovvero la memorizzazione dei dati su più livelli dell’hardware, sfruttando la potenza della memoria flash (con memoria flash, anche flash memory si intende una tipologia di memoria a stato solido e non volatile che può essere usata come memoria a lettura-scrittura).
+
+3) La virtualizzazione a livello di sistema operativo viene realizzato mediante la creazione di container, cioè più istanze user space isolate tra di loro. Rispetto alla tradizionale virtualizzazione, qui si osserva la completa assenza delle cosiddette macchine virtuali e dei rispettivi sistemi operativi guest.
+
+4) La virtualizzazione del file system si riferisce a una tecnologia chiamata Distributed File System (DFS), che fornisce una gestione consolidata dei dati presenti nei file di un’azienda. Gli utenti hanno l’illusione che tutti i dati siano presenti in un unico file server, quando in realtà possono essere condivisi su più file server.

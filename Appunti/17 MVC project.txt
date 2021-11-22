@@ -1,0 +1,20 @@
+MVC:
+M(model)=>disegna sottoinsieme l'entità/classe che funge da DTO(ovvero trasporto di dati)
+V(view)=> ogni modello ha un riquadro di visualizzazione(es. Razor misto tra html e c#)
+C(controller)=> indirizzo univoco che restituisce i dati Json (se è un API).Può restituire:
+	- il dato nudo Json o XML 
+	-dati pronti per la visualizzazioni (rendirizzato per il browser)
+
+
+Logger:la registrazione sequenziale e cronologica delle operazioni effettuate, da un utente, un amministratore o automatizzate, man mano che vengono eseguite dal sistema o applicazione. Possono essere:
+Information=>log di tutto
+Warning=> log dal warning in su
+Errore=> log solo del livello di errore
+https://nlog-project.org/
+
+Per archiviare e leggere la stringa di connessione in appsettings.json:
+https://www.connectionstrings.com/store-and-read-connection-string-in-appsettings-json/
+
+
+comando per fare publish:
+dotnet publish -c Release -o ./publish

@@ -1,0 +1,15 @@
+lab devops su azure
+
+containers e kubernetis
+
+Design governance
+Design security for applications
+Design a solution for backup and recovery
+Design for high availability
+
+Design for cost optimization
+Design a solution for logging and monitoring
+Design authentication
+Design authorization
+
+

@@ -1,0 +1,127 @@
+Tipi di dato valore : value types / scalari
+
+linguaggi procedurali
+
+solo: interi, virgola mobile, carattere (ASCII), array, struct (accorpamento di quanto sopra)
+
+qualsiasi rappresentazione dei dati era contigua e come appariva al creatore del dato appariva anche all'esterno al client che poteva corromperne il valore.
+
+Enum:
+consente di usare degli identificatori nel codice, ma che rappresentano dei semplici interi
+e questo per aumentare la leggibilità del codice.
+
+Es.
+
+enum Stati
+{
+    spento, =0
+    inpausa, =1
+    acceso =2
+}
+
+
+il codice seguente è maggiormente leggibile
+Stati x = Stati.spento;
+
+
+if (x =1 )
+
+(if x = Stati.inpausa )
+
+Tipi di dato non scalari/ oggetto
+
+Arrays
+sequenza contigua ed ordinata di dati dello stesso tipo
+
+CLASSE
+è una rappresentazione del mondo reale limitata al processo che stiamo implementando.
+permette come nei linguaggi procedurali di:
+1- Riusare il codice
+2 -Grazie all'incapsulazione consente di inserire le variabili, inizializzarle, e gestirle tramite metodi ( ex procedure o funzioni) in un solo punto secondo la pertinenza
+3- sfruttando l'ereditarietà consente di rifattorizzare continuamente il codice ed evitare copia incolla inutili (potenzialmente dannosi quando devo fare delle modifiche massive)
+
+
+
+NAMESPACE
+le classi sono contenute in un namespace
+anche i namespace possono essere innestati tra loro,
+come nel seguente esempio:
+
+namespace1
+{
+    classe1 <-------  namespace1.classe1
+    classe2
+    classe3
+    namespace 2
+    interface 0 
+     classeA
+     classeB <-------  namespace1.namespace2.classeB
+     classe1 <-------  namespace1.namespace2.classe1
+}
+
+per referenziare una classe devo indicare il namespace completo (path completo)
+ 
+N.B. il nome di: variabile, classe e metodo si chiama IDENTIFICATORE
+
+
+MODIFICATORI DI ACCESSO
+
+le variabili all'interno della classe possono essere 
+private: (non visibili all'esterno) 
+pubblic: (visibili da chi mi istanzia)
+protected: visibili dalla classe e da tutte le sue derivate
+
+altri modificatori
+static: accessibili con il nomeClasse senza instanziare
+
+MEMBRI
+
+le variabili si dicono membri o campi di una classe
+altri membri possono essere
+proprietà
+indicizzatori //todo
+metodi
+anch'essi possono avere un modificatore di accesso o altri modificatori come
+
+static 
+abstract (stabilisce una firma da implementare nelle classi derivate)
+virtual (consente anche se già implementato, di fare un override nelle classi derivate, cioè di scriverne la nostra versione specifica o personalizzata.)
+
+OVERLOAD METODO
+in una stessa classe posso avere più versioni dello stesso metodo, che differiscono per firma.
+
+INTERFACCE
+rappresentano un CONTRATTO che obbliga chi implementa ("deriva") ad avere ALMENO quei membri specificati.
+La sintassi è simile a quella delle classi ma elencano SOLO le firme dei membri pubblici dunque non è necessario specificare public 
+
+FULLY QUALIFIED NAME
+Nome interamente qualificato
+
+CLASSE OBJECT
+la classe di base implicita di tutte le classi comprese quelle che scriviamo nel nostro codice è la classe object
+fornisce metodi virtuali importanti di cui possiamo fare override, come ad esempio i seguenti:
+
+GetType -> restituisce tutte le caratteristiche del TIPO di quell'oggetto.
+Equals -> verifica se un valore è uguale ad un altro. Per gli oggetti verifica solo l'indirizzo di memoria e non fa confronti membro a membro
+*************
+*  ToString * 
+*************
+deputato a convertire l'oggetto in formato stringa. 
+Per tipi non scalari è necessario fare override altrimenti visualizzerò solo il nome completo del tipo
+
+Costruttori //todo
+this //todo
+base //todo
+
+
+Ereditarietà
+Consente di riusare tutti i membri della classe di base e di scriverne di nuovi
+si indica con la seguente notazione
+
+
+//si legge classe1 DERIVA classe di base 
+classe1 : classeDiBase
+
+//si legge classe2 IMPLEMENTA Interfaccia
+classe2 : Interfaccia
+

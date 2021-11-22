@@ -1,0 +1,80 @@
+CREATE TABLE
+ 		        [dbo]=>Database Owner
+[nomedatabase].[nomeschema].[nometabella]( nomecolonna/campo definitizionecolonne colonnaConstraint Colonnaindex  TIPO)
+|__________________________|
+	Opzionali
+	
+quando si crea una colonna, dopo aver inserito il nome e il tipo, è possibile stabilire se questa possa contenere valori null o meno,
+inserendo NOT NULL
+
+definizionecolonna => IDENTITY [ ( origine , incremento) ]
+
+colonna constraint =>PRIMARY  KEY
+una Pk costituisce un vincolo che, applicato ad una colonna, consente di identificare in maniera univoca i record in una tabella e non può contenere valori nulli. 
+
+colonna index(clustered|not clustered)
+
+Foreign key=> campi/colonne il cui significato è collegarmi agli ID di altre 
+
+Filetable=> tabella finta, è una cartella su disco sul server
+Tipologie di tipo variabile:
+big int => per non avere limiti con gli interi
+NVarchar(255)=> per le stringhe
+text => crea un file di testo che salva in locale, quindi ricerca lenta (sconsigliato per la ricerca)
+
+Script=>è un programma scritto con un linguaggio di scripting. E' buona norma archiviare gli script.
+Script di migrazione => quando un database cambia versione per una variazione qualsiasi del database, lo uso per portarlo in fase di sviluppo o per passarlo ai colleghi.
+
+Un’altra proprietà è Not For Replication, che consente di attivare delle repliche automatiche dei dati. 
+Le repliche di dati portano dati da un db a un altro per es. da db regionali a nazionale unico. Ma quando si fa la replica in un contesto più grande l’id locale non deve essere replicato nell’id effettivo nazionale perché questo ha una numerazione diversa dovuta alla presenza di immissione dati anche da altre regioni). Simile cosa alla serializzazione dati. 
+
+Conversioni tipi di dato da C# a Sql:
+https://docs.microsoft.com/it-it/dotnet/framework/data/adonet/sql-server-data-type-mappings
+
+Comando per resettare seed di una tabella:
+DBCC CHECKIDENT(TbAppuntamenti,RESEED,1);
+				|_____________|
+				Tabella esempio
+
+
+Runcate table dbo.tabellaesempio => comando per cancellare tutti i dati precedentemente memorizzati in un tabella
+
+Tabella di LookUp= si intende una struttura dati usata per sostituire operazioni di calcolo a runtime con una più semplice operazione di consultazione. Il guadagno di velocità può essere significativo, poiché recuperare un valore dalla memoria è spesso più veloce che sottoporsi a calcoli con tempi di esecuzione dispendiosi.
+
+INTEGRITA’ REFERENZIALE: L'Integrità Referenziale è un insieme di regole che garantiscono l'integrità dei dati quando si hanno relazioni tra varie tabelle, associate tra loro attraverso la chiave esterna: queste regole servono per rendere valide le relazioni tra le tabelle e per eliminare gli errori in inserimento, cancellazione, o modifica dei dati collegati tra loro.
+
+FOREIGN KEY: identifica una o più colonne di una tabella, detta tabella referenziante, che referenzia una o più colonne di un'altra tabella, detta referenziata. 
+
+RELAZIONI: sono dei legami logici che permettono di aggregare informazioni. Nello specifico è un legame che unisce i campi comuni di due tabelle (primaria e secondaria). L’esistenza di uno o più valori del campo della tabella secondaria (su cui è definita la relazione) è condizionata dall’esistenza dello stesso valore nella tabella primaria.  Nella tabella primaria sarà presente la chiave primaria, mentre in quella secondaria la FK o chiave esterna. Vi sono due tipi di relazioni:
+1 uno a molti: ad ogni record della tabella primaria corrisponde uno o più record della secondaria.
+2 uno a uno: ad un record della tabella primaria corrisponde un solo record della secondaria
+3 molti a molti: più record in una tabella sono associati a più record in un'altra tabella. Ad esempio, tra clienti e prodotti è presente una relazione "molti a molti": i clienti possono acquistare diversi prodotti e i prodotti possono essere acquistati da diversi clienti.
+
+DB RELAZIONALE: Un database relazionale è un tipo di database di archiviazione che fornisce accesso a data points correlati tra loro. I database relazionali sono basati sul modello relazionale, un modo intuitivo e diretto di rappresentare i dati nelle tabelle. In un database relazionale ogni riga della tabella è un record con un ID univoco chiamato chiave. Le colonne della tabella contengono gli attributi dei dati e ogni record di solito ha un valore per ogni attributo, rendendo facile stabilire le relazioni tra i data points. Secondo il modello relazionale, le strutture dei dati, ovvero tabelle di dati, viste e indici, sono separate dalle strutture di storage fisiche. Grazie a questa separazione, gli amministratori di database possono gestire lo storage fisico dei dati senza compromettere l'accesso a tali dati come struttura logica. Ad esempio, la ridenominazione di un file di database non implica la ridenominazione delle tabelle archiviate al suo interno. Per garantire che i dati siano sempre accurati e accessibili, i database relazionali seguono regole di integrità specifiche. Ad esempio, una regola di integrità può specificare che le righe duplicate non sono consentite in una tabella, al fine di evitare l'ingresso di informazioni errate nel database. È possibile organizzare un db partendo da una tabella centrale denominata “dei fatti” (sono tutti gli oggetti che sono misurabili, tutto ciò che può essere contato, sommato o relazionato. Ad esempio: il numero di ordini, importo del fatturato, costo di un prodotto, numero di clienti etc. I Fatti sono l’entità più importante e definiscono l’ambito di analisi.) la quale sarà legata ad altre tabelle delle dimensioni (Le dimensioni definiscono il contesto all’interno del quale il fatto acquista significato. Sono tutti i modi con cui io posso interrogare i fatti, cioè tutto ciò che è sommabile. Ad esempio, l’anno 2021 è una dimensione del tempo, il cliente, è una dimensione) mediante una relazione
+-	Star Schema: ad ogni dimensione corrisponde una tabella, contenente tutti gli attributi. 
+
+-	Snow Flake Schema: ad ogni dimensione corrisponderanno N tabelle relazionate fra di loro. 
+
+FUNZIONI DI AGGREGAZIONE:
+L’aggregazione è una forma di interrogazione attraverso cui si ottengono risultati riepilogativi del contenuto di una tabella; a tale scopo vengono utilizzate. Di seguito alcuni esempi di funzioni di aggregazione:
+
+COUNT: La funzione COUNT conta il numero di righe presenti in una tabella. Se si utilizza una selezione (clausola WHERE), la funzione Count restituisce il numero delle righe che soddisfano la condizione specificata. Il risultato del conteggio può essere anche descritto con un’opportuna intestazione aggiungendo la clausola AS (Alias). È anche possibile utilizzare la clausola DISTINCT per ottenere il numero de valori diversi tra loro nella colonna specificata.
+
+SUM: La funzione SUM restituisce la somma di tutti i valori contenuti in una colonna. Nel caso siano presenti valori NULL, saranno considerati come aventi valore 0.Se necessario, è possibile utilizzare anche la parola chiave DISTINCT. L’argomento della funzione SUM può anche essere un’espressione numerica contenente i nomi delle colonne di tipo numerico interessate.
+
+AVG: La funzione AVG calcola la media aritmetica dei valori numerici contenuti in una determinata colonna di una tabella, con l’eventuale aggiunta dell’opzione DISTINCT. La funzione non include nel calcolo i valori di tipo NULL presenti nella colonna.
+
+MIN e MAX: Le funzioni MIN e MAX restituiscono rispettivamente il valore minimo e il valore massimo tra i valori della colonna, anche di tipo carattere, specificata come argomento della funzione; anche in tal caso, specificando la clausola WHERE calcolano il valore minimo e massimo dei valori di una colonna considerando solo le righe che soddisfano alla condizione. Anche le funzioni MIN e MAX ignorano i campi con valore NULL e possono avere come argomento un’espressione anziché il nome di un attributo.
+
+
+SQL CONNECTION CLASS: Rappresenta una connessione aperta a un database di SQL Server. La classe non può essere ereditata. Un SqlConnection oggetto rappresenta una sessione univoca per un'SQL Server dati. Con un sistema di database client/server, equivale a una connessione di rete al server. SqlConnection viene usato insieme a SqlDataAdapter. Quando si crea un'istanza di SqlConnection , tutte le proprietà vengono impostate sui valori iniziali. Per un elenco di questi valori, vedere il SqlConnection costruttore.
+
+SQL DATAADAPTER CLASS: Rappresenta un set di comandi dati e una connessione di database usati per riempire l'oggetto DataSet e aggiornare un database SQL Server. La classe non può essere ereditata.
+Lo SqlDataAdapter serve come ponte tra un DataSet e SQL Server per recuperare e salvare i dati. Lo SqlDataAdapter fornisce questo ponte mappando Fill, che cambia i dati nel DataSet per abbinare i dati nell'origine dati, e Update, che cambia i dati nell'origine dati per abbinare i dati nel DataSet, usando le istruzioni Transact-SQL appropriate contro l'origine dati.
+
+SQL COMMAND implementa l'intrfaccia IDbCommand e consente di invocare comandi verso il DB Server. specifichiamo di che tipo di comando si tratta (CommandType) il testo del comando stesso (CommandText in sintassi SQL) e per effettuare tale comando scegliamo tra: 
+ExecuteReader se sappiamo che ritornerà dei record,
+ExecuteScalar se ci interessa comunque solo la prima cella in alto a sx
+ExecuteNonQuery se non siamo interessati ai dati ritornati
+
+SQL DATAREADER CLASS: Consente di leggere un flusso forward-only di righe da un database SQL Server. La classe non può essere ereditata. Per creare un SqlDataReader, dovete chiamare il metodo ExecuteReader dell'oggetto SqlCommand, invece di usare direttamente un costruttore. Mentre lo SqlDataReader è in uso, la SqlConnection associata è occupata a servire lo SqlDataReader, e non si possono eseguire altre operazioni sulla SqlConnection se non la chiusura. 

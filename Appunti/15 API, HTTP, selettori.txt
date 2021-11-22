@@ -1,0 +1,29 @@
+Le API (acronimo di Application Programming Interface, ovvero Interfaccia di programmazione delle applicazioni) sono un insieme di definizioni e protocolli con i quali vengono realizzati e integrati software applicativi. Possono essere considerate come un contratto tra un fornitore di informazioni e l'utente destinatario di tali dati: l'API stabilisce il contenuto richiesto dal consumatore (la chiamata) e il contenuto richiesto dal produttore (la risposta). 
+Un'API REST, nota anche come API RESTful, è un'interfaccia di programmazione delle applicazioni (API o API web) conforme ai vincoli dello stile architetturale REST, che consente l'interazione con servizi web RESTful. Il termine REST, coniato dall'informatico Roy Fielding, è l'acronimo di REpresentational State Transfer.
+Affinché un'API sia considerata RESTful, deve rispettare i criteri indicati di seguito:
+- Un'architettura client-server composta da client, server e risorse, con richieste gestite tramite HTTP.
+- Una comunicazione client-server stateless, che quindi non prevede la memorizzazione delle informazioni del client tra le richieste Get; ogni richiesta è distinta e non connessa.
+- Dati memorizzabili nella cache che ottimizzano le interazioni client-server.
+- Un'interfaccia uniforme per i componenti, in modo che le informazioni vengano trasferite in una forma standard.
+https://blog.bitsrc.io/vs-codes-rest-client-plugin-is-all-you-need-to-make-api-calls-e9e95fcfd85a
+
+HTTP (Hypertext Transfer Protocol, letteralmente protocollo di trasferimento di un ipertesto) è un linguaggio di testo che consente la comunicazione tra client e server attraverso internet. Ogni qualvolta visitiamo un sito internet, HTTP ci consente di visualizzare le risorse di quel sito. Ogni conversazione tra client e server sul web inizia con una richiesta, un messaggio di testo creato dal client in un formato speciale noto appunto come HTTP.
+Una richiesta HTTP è composta dalle seguenti parti:
+[method] [URI] [version]
+[headers]
+[body]
+La prima riga di una richiesta HTTP è la più importante e contiene due parti fondamentali: HTTP set e URI.
+L'URI è l'indirizzo o il percorso univoco che identifica la risorsa che il client desidera. Il metodo HTTP definisce ciò che il client vuole fare con la risorsa. Oltre alla prima riga, una richiesta HTTP contiene altre informazioni chiamate intestazioni di richiesta (request headers). Le intestazioni forniscono molte informazioni supplementari come l'host dove si trova la risorsa (Host), i formati di risposta accettati dal client (Accept) e l'applicazione utilizzata dal client per effettuare la richiesta (User-Agent).
+L'obiettivo del server è di interpretare la richiesta del client e restituire una risposta.
+Una volta che il server ha ricevuto la richiesta, conosce esattamente la risorsa di cui il client ha bisogno (tramite l'URI) e ciò che il client vuole fare con quella risorsa (tramite il metodo).
+Ad esempio, nel caso di una richiesta GET, il server prepara la risorsa e la restituisce in una risposta HTTP. Come per la richiesta, una risposta HTTP è composta dalle seguenti parti:
+[version] [status code] [reason]
+[headers]
+[body]
+La risposta HTTP contiene la risorsa richiesta (il contenuto HTML in questo caso), più altre importanti informazioni come il codice di stato della risposta. Come la richiesta, anche una risposta HTTP contiene informazioni aggiuntive note come intestazioni di risposta HTTP (response headers). Il corpo della stessa risorsa può essere restituito in più formati diversi come HTML o JSON.
+
+GET: Recupera una risorsa dal server (ad es. visitando una pagina).
+POST: Invia una risorsa al server (ad. es compilando un modulo).
+DELETE: Cancella una risorsa dal server (ad es. eliminando un file).
+PUT: Memorizza una risorsa sul server (as es. caricando un file).
+HEAD: Recupera solo l'header della risposta senza la risorsa.

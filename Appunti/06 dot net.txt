@@ -1,0 +1,34 @@
+https://docs.microsoft.com/it-it/dotnet/core/tutorials/with-visual-studio-code
+
+.net framework è un insieme di LIBRERIE che consentono di scrivere programmi in svariati linguaggi tra cui i più importanti sono ad es 
+
+c 
+visual basic
+c ++ 
+java 
+c#
+
+LIBRERIA dll dynamic linked library 
+
+pezzo di codice compilato ma non eseguibile che contiene le funzioni / classi necessarie a fare un certo sw ad esempio accesso ai iles alla rete etc.
+
+devo referenziare la libreria per usufruire di questa funzionalità nel mio programma
+
+posso accedere alla funzione o classe che mi serve
+
+storia della programmazione :
+
+0 programmazione strutturata e funzionale / modulare [-> compilo e se il setema lo consente viene eseguito]
+
+1 OOP (programmazione strutturata) + classi + astendibilità dei tipi ["]
+
+2 librerie dll per programmare su prodotti di terze parti [linko con la con la libreria corretta ]
+
+3 microsoft : .net famework [IL 2 passaggi compilo -> esecuzione]
+
+4 .net core : partizionare / frammentare in tante dll 
+
+6 referenziamo solo il .net core + referenziare puntualmente (esempio solo io.dll per leggere tasti )
+
+8 S.O.L.I.D.
+

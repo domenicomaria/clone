@@ -1,0 +1,64 @@
+risorse sul monitoring 
+https://docs.microsoft.com/it-it/azure/azure-monitor/overview
+
+storage account 
+https://docs.microsoft.com/it-it/azure/storage/common/storage-account-overview
+
+linux VM da portale
+https://docs.microsoft.com/en-us/azure/virtual-machines/linux/quick-create-portal
+
+remote desktop da portale per macchina ubuntu
+https://docs.microsoft.com/en-us/azure/virtual-machines/linux/use-remote-desktop
+
+lamp stack con wordpress da cli
+https://docs.microsoft.com/en-us/azure/virtual-machines/linux/tutorial-lamp-stack
+
+ssh VM
+https://docs.microsoft.com/it-it/azure/virtual-machines/linux/ssh-from-windows
+
+trouble shooting
+https://docs.microsoft.com/it-it/troubleshoot/azure/virtual-machines/troubleshoot-ssh-connection
+
+win server VM da portale
+https://docs.microsoft.com/en-us/azure/virtual-machines/windows/quick-create-portal
+
+super pro tutorials per ambiente enterprise
+https://azurescene.com/
+
+tematiche pratiche su cloud computing
+https://medium.com/chenjd-xyz/azure-fundamental-iaas-paas-saas-973e0c406de7
+
+RBAC
+https://docs.microsoft.com/en-us/azure/role-based-access-control/overview
+
+vnet azure
+https://docs.microsoft.com/en-us/azure/virtual-network/virtual-networks-faq
+
+assegnazione di ruoli ad utenti
+https://docs.microsoft.com/en-us/azure/role-based-access-control/role-assignments-portal
+
+Azure Active Directory
+https://docs.microsoft.com/it-it/azure/active-directory/fundamentals/active-directory-groups-create-azure-portal
+
+Modificare i diritti di accesso
+https://docs.microsoft.com/it-it/azure/active-directory/fundamentals/active-directory-manage-groups
+
+Deny assignment
+https://docs.microsoft.com/en-us/azure/role-based-access-control/deny-assignments
+
+DevOps lab
+https://channel9.msdn.com/Events/Connect/2017/T174/player/
+https://docs.microsoft.com/en-us/azure/devops-project/
+https://docs.microsoft.com/en-us/azure/devops-project/azure-devops-project-aspnet-core
+
+Governance
+https://docs.microsoft.com/en-us/azure/cloud-adoption-framework/govern/methodology
+https://it.wikipedia.org/wiki/Shadow_IT
+https://docs.microsoft.com/en-us/azure/cloud-adoption-framework/govern/guides/
+https://docs.microsoft.com/en-us/azure/cloud-adoption-framework/govern/guides/standard/
+
+Security
+https://docs.microsoft.com/en-us/azure/active-directory/identity-protection/concept-identity-protection-security-overview
+https://docs.microsoft.com/en-us/azure/active-directory/privileged-identity-management/pim-configure
+https://docs.microsoft.com/en-us/azure/key-vault/general/basic-concepts
+overview risorsa: Azure Security Center

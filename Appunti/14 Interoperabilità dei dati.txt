@@ -1,0 +1,98 @@
+CSV
+
+esempio 
+
+1;3;"Daniele";"Sala 4"
+2;4;"Antonio";"Sala 4"
+...;..;"..";"..."
+
+Problema : 
+..;..;..;..   <---- non segue lo schema previsto
+"...";"...";..;... <---- non segue lo schema previsto
+
+
+XML extensible markup language
+una struttura in file di testo orgazzata per elementi contenuti tra loro ad albero
+
+extensible : aperto all'estensione
+markup: il dato è marcato o racchiuso da un tag di apertura e un tag di chiusura che delimitano "l'elemento"
+
+esempio
+
+Cliente
+    id -> 1
+    idPostazione -> 3
+    Nome -> Daniele
+    Sala - > Sala 4
+
+file clienti.xml a cui posso applicare una trasformazione tramite XSLT
+<dati>
+    <repoClienti>
+        <cliente id="1" nome= "Daniele" Sala="Sala 4"> 
+        <!-- contiene altri dati/ o elementi -->
+            
+            <sala nome = "sala 4" piano="2" />
+            <Sala ...... />
+
+        </cliente>
+        <cliente id="2" nome"pippo" sala="sala2" > 
+          parte testuale 
+        </cliente>
+    </repoClienti>
+    <repoReferenti>
+    </repoReferenti>
+</dati>
+
+HTML è un caso particolare di XML usato dal browser per ricevere i dati relativi al rendering a video di un Hypertext markup language
+
+cosa è un DTD 
+DTD (Document Type Definition) è una descrizione formale della grammatica di un linguaggio di markup. 
+
+<html>
+    <head>
+     ..... varie informazioni non visualizzabili nella pagina ma utili a defirne : lo stile, i metadati, ed i collegamenti con altri documenti importanti, nonchè i file javascript che vengono eseguiti dal browser che riceve questo documento
+    </head>
+    <body>
+    ..... la parte testuale ed ipertestuale: video, immagini, audio stili di visualizzazione e quant'altro
+    </body>
+</html>
+
+
+
+
+Trasmissione dei dati tra sistemi diversi:
+the winner is.....
+Json
+
+JSON è un formato per immagazzinare e trasmigrare i dati, viene spesso utilizzato quando si inviano i dati da un server ad una pagina web. Il suo acronimo sta per JavaScript Object Notation, è un formato per interscambio di dati leggero e può essere scritto in qualsiasi linguaggio di programmazione. Lo si usa per trasmettere i dati via http da API. 
+Un esempio di Json è il seguente:
+
+{
+"employees":[
+  {"firstName":"John","lastName":"Doe"}, 
+  {"firstName":"Anna","lastName":"Smith"},
+ {"firstName":"Peter","lastName":"Jones"}
+]
+}
+
+Sintatticamente è identico al codice per creare un oggetto javascript, le regole di sintassi sono le seguenti:
+
+Il dato viene scritto in coppia nome/valore:
+  “firstName":"John"
+
+I dati sono separati da virgole:
+  {"firstName":"John", "lastName":"Doe"}, 
+
+Le graffe contengono gli oggetti:
+•	{"firstName":"John", "lastName":"Doe"}
+
+Le quadre contengono gli arrays:
+"employees":[
+  {"firstName":"John", "lastName":"Doe"}, 
+  {"firstName":"Anna", "lastName":"Smith"}, 
+  {"firstName":"Peter", "lastName":"Jones"}
+]
+
+Nell’esempio di sopra, l’oggetto employees è un array contenente tre oggetti, ognuno dei quali è il record di una persona.  
+
+

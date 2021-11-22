@@ -1,0 +1,25 @@
+File server serve dei file
+Web server mi mostra un elaborazione in formato html, tra questi abbiamo:
+-nginx
+-apache
+-Internet Information Services (IIS) servizio di microsoft
+-kestrel, risponde alla porta 5000 di default
+-ssh server
+
+All'interno possiamo registrare un sito internet o più con ip diversi.
+Ogni website è programmabile per IP e per porta (8080 di default)
+A livello di application può servire cartelle diverse per isolare i processi ospitati
+Virtual directory: cartella mappata in un website che non è fisicamente una vera sottocartella ma risiede altrove e può essere agganciata a uno o più webserver
+
+Possiamo definire una priorità di file.estensione di default
+
+Pagine di errori diverse e programmabili. Significato di errori http:
+https://it.wikipedia.org/wiki/Codici_di_stato_HTTP
+
+Moduli:
+accessi=> 
+ssl certificati di sicurezza
+compressione
+modulo di url rewrite importante per la tematica SEO, per le tabelle di routing e sia a livello di webserver
+
+Un crawler, spider, o bot di un motore di ricerca, scarica e indicizza contenuti presenti in ogni angolo di Internet. L'obiettivo è conoscere di quale argomento tratta ogni pagina presente in rete, in modo che le informazioni possano essere recuperate quando ce n'è bisogno. Sono chiamati "web crawler" perché "crawling" è il termine tecnico utilizzato per indicare l'accesso a un sito web e il recupero di dati ottenuti tramite un programma informatico.

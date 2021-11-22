@@ -1,0 +1,138 @@
+OOP sta per object oriented programming 
+
+// CAMEL CASE NAMING CONVENTION:
+// per convenzione si usa la Camel Casing: significa che uso più parole, unite, e con l'iniziale maiuscola
+// nome classe: sempre maiuscolo
+// membri e variabili: la prima lettera sarà minuscola per variabili e metodi (membri) locali o private, 
+// e sarà Maiuscola per membri pubblici
+//
+// esempio, per esprimere la classe figurageometrica: FiguraGeometrica
+// per esprimere la variabile privata indice: int indice
+// per il metodo pubblico di stampa: public void Stampa()
+
+cosa significa object
+
+è la rappresentazione di tutto ciò che concerne una singola entità che voglio definire
+questa cambia a seconda del dettaglio che voglio osservare ... potendola rendere maggiormente precisa e definita
+
+storia: 
+
+A) inizialmente la programmazione era una sequenza di istruzioni e salti,
+come descritto nel seguente esempio:
+
+0 se sei in oraio di lavoro attendi un cliente
+  altrimenti vai a casa
+1 se un cliente entra
+    2 controllo le credenziali
+    3 verifico l'appuntamento
+    4 chiamo il referente 
+    5 se il referente è impegnato oppure assente 
+        fisso un nuovo appuntamento vai al punto 1 
+    altrimenti
+        5 accompagno il cliente 
+        6 ritorno alla mia postazione
+        7 vai al punto 1
+8 altrimenti svolgi i lavori di segreteria
+
+
+B) nella programmazione strutturata (procedurale) 
+le tre strutture di controllo possibili sono le seguenti
+
+1- sequenza: varie istruzioni una dopo l'altra
+2- selezione: opero una scelta in base ad una condizione
+3- iterazione: ripeto un blocco di istruzioni a dipendere da una condizione
+
+
+esempio
+
+fintanto che (siamo in orario di lavoro)
+{
+  ripeti (il cliente è arrivato alla porta)
+  {
+    esegui funzioni d'ufficio
+  }
+  // asserisco che c'è un cliente 
+  se (verifica credenziali)
+  {
+    chiamo referente
+  }
+  altrimenti
+  {
+    fisso un nuovo appuntamento
+    saluto il cliente
+  }
+  // asserisco c'è un cliente atteso
+  accompagno il cliente dal referente
+  ritorno alla mia postazione
+}
+vado a casa
+
+C) OOP
+
+individuazione delle entità:
+
+
+cliente
+  id, nome, cognome, telefono o email
+referente
+  id, nome, cognome, telefono o email
+
+( posso prevedere sia per referente che per cliente una persona anagrafica?)
+
+postazione
+  id, piano, numero stanza
+
+appuntamento
+  id 
+  data e orario
+  durata prevista
+  postazione
+  cliente
+  referente
+
+lista, sia per referenti, clienti, appuntamenti
+individuare un elemento tramite una chiave
+
+esempio
+  per referenti o clienti chiave univoca : id , oppure con un filtro:  cognome , parte del cognome -> lista fitrata
+  per gli appuntamenti : chiave univoca : id , con filtro : tutti gli appuntamenti di un certo referente, o di un certo cliente, data e ora, -> lista filtrata
+
+
+OOP esempio figure geometriche
+
+dominio (perimetro) applicativo
+1- che figure vuoi gestire : rettangoli e quadrati, triangoli e cerchio.
+2- che tipo di operazioni vuoi svolgere: spostare sul piano di lavoro, calcolare  superficie e perimetro, stampare 
+3- 2d : ok 
+4- dimensioni o formato del piano di lavoro: A4 
+5- colori: ok.
+
+
+classe contiene:
+
+1) Membri possono avere i seguenti modificatori di accesso
+  -pubblici 
+  -privati => incapsulazione vuol dire rendere modificabile la variabile solo all'interno della classe. 
+  -protetti: verso l'esterno è privato, verso le classe e le classi derivate è visibile
+  
+2) Costruttore= serve a inizializzare le variabili. Grazie ad esso posso evitare di esporre una proprietà che imposta le variabili.
+
+3) Distruttore= dealloca memoria (es. chiusura server)
+
+4) Proprietà = può essere get(se leggo la variabile) o set (se imposto la variabile)
+
+4)Metodi:
+  - di istanza: chiamati su una variabile di quella classe
+  - statici: chiamati solo col nome della classe
+
+5) Overload: metodo che compare con lo stesso nome ma in varie versioni
+   che differiscono per firma
+
+Firma di un metodo: 
+  - tipo (il tipo che ritornerà)
+  - nome
+  - elenco parametri
+
+"design patterns": , facade, orchestrator, adapter, factory service, repository.
+
+test driven design : disegno test che fallisce, do implementazioni del programma, e riverifico il test e mi aspetto che non fallisca
